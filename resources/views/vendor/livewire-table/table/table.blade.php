@@ -1,5 +1,5 @@
-<table class=" w-full relative font-sans text-xs" x-data="{ selected: @entangle('selected') }">
-    <thead class="border-b border-neutral-200 dark:border-neutral-700">
+<table class=" w-full relative font-sans text-xs " x-data="{ selected: @entangle('selected') }">
+    <thead class="border-b  border-neutral-200 dark:border-neutral-700">
     <tr class="group">
         @if($this->canSelect())
             <th class="p-0 text-left text-black bg-neutral-50 dark:text-white dark:bg-neutral-800">
@@ -8,7 +8,7 @@
         @endif
         @foreach($table['columns'] as $column)
             @continue(! in_array($column->code(), $this->columns))
-            <th class="p-0 text-left text-black bg-neutral-50 dark:text-white dark:bg-neutral-800">
+            <th class="p-0 text-left text-black backdrop-blur-md bg-white/30 dark:text-white dark:bg-neutral-800">
                 {{ $column->renderHeader() }}
             </th>
         @endforeach
@@ -29,8 +29,8 @@
     </thead>
     <tbody>
     @if($this->deferLoading && ! $this->initialized)
-        <tr class="group">
-            <td class="p-0" colspan="{{ $table['columns']->count() + 1 }}">
+        <tr class="group ">
+            <td class="p-0 " colspan="{{ $table['columns']->count() + 1 }}">
                 <span class="block text-lg text-center py-20 bg-white text-black dark:bg-neutral-900 dark:text-white">
                     @lang('Fetching records...')
                 </span>
@@ -58,7 +58,7 @@
                 @if($this->canSelect())
                     <td class="p-0 "
                         x-bind:class="~selected.indexOf('{{ $item->getKey() }}')
-                                ? 'bg-blue-100 group-odd:bg-blue-100 group-hover:bg-blue-200 dark:bg-blue-900 dark:group-odd:bg-blue-900 dark:group-hover:bg-blue-800'
+                                ? 'backdrop-blur-md bg-white/30 group-odd:bg-blue-100 group-hover:bg-blue-200 dark:bg-blue-900 dark:group-odd:bg-blue-900 dark:group-hover:bg-blue-800'
                                 : 'bg-neutral-100 group-odd:bg-white group-hover:bg-neutral-200 dark:bg-neutral-800 dark:group-odd:bg-neutral-900 dark:group-hover:bg-neutral-700'">
                         <div class="mx-3">
                             <input type="checkbox" wire:model.live="selected" value="{{ $item->getKey() }}" class="size-4">

@@ -17,8 +17,10 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased" >
         <x-banner />
+        <div class="absolute inset-0" style="background-image:url('{{ asset('storage/logo/bricks.webp') }}'); background-size: cover; background-position: center; opacity: 0.5 -z-10;"></div>
+       
 
         <div class="min-h-screen bg-gray-100">
             @livewire('navigation-menu')

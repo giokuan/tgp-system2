@@ -1,7 +1,7 @@
 <div>
     @if ($paginator->hasPages())
 
-        <nav role="navigation" aria-label="Pagination Navigation" class="flex items-center justify-between">
+        <nav role="navigation" aria-label="Pagination Navigation" class="flex items-center justify-between ">
 
             {{-- Mobile --}}
             <div class="flex flex-col gap-3 w-full lg:hidden">

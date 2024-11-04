@@ -1,5 +1,5 @@
 
-<div>
+<div class="z-index:10">
 
     <!-- Skeleton Loader -->
     <div wire:loading class="flex w-52 flex-col gap-4">

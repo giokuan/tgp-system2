@@ -20,10 +20,10 @@
         @endif
     </head>
     <body class="font-sans antialiased " >
-        <div class="bg-gray-50 text-black/50 min-h-screen relative">
+        <div class="bg-black text-yellow/50 min-h-screen relative">
             {{-- <img id="background" class="absolute -left-20 top-0 max-w-[877px]" src="https://laravel.com/assets/img/welcome/background.svg" alt="Laravel background" /> --}}
             {{-- <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('storage/logo/background1.svg') }}'); opacity: 0.5; z-index: -1;"></div> --}}
-            <div class="absolute inset-0" style="background-image: url('{{ asset('storage/logo/background1.svg') }}'); background-size: cover; background-position: center; opacity: 0.5;"></div>
+            <div class="absolute inset-0" style="background-image:url('{{ asset('storage/logo/bricks.webp') }}'); background-size: cover; background-position: center; opacity: 0.5;"></div>
 
             <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
                 <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
@@ -44,7 +44,7 @@
                                 @else
                                     <a
                                         wire:navigate href="{{ route('login') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]"
+                                        class="rounded-md px-3 py-2 text-yellow-500 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]"
                                     >
                                         Log in
                                     </a>
@@ -52,7 +52,7 @@
                                     @if (Route::has('register'))
                                         <a
                                             wire:navigate href="{{ route('register') }}"
-                                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]"
+                                            class="rounded-md px-3 py-2 text-yellow-500 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]"
                                         >
                                             Register
                                         </a>
@@ -113,9 +113,9 @@
 
                             <a
                                
-                                class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10"
+                                class="flex items-start gap-4 rounded-lg backdrop-blur-md bg-white/30 p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10"
                             >
-                                <div class="hidden md:flex size-8 shrink-0 items-center justify-center rounded-full bg-yellow-100 sm:size-16">
+                                <div class="hidden md:flex size-8 shrink-0 items-center justify-center rounded-full  sm:size-16">
                                     {{-- <svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g fill="#FF2D20"><path d="M24 8.25a.5.5 0 0 0-.5-.5H.5a.5.5 0 0 0-.5.5v12a2.5 2.5 0 0 0 2.5 2.5h19a2.5 2.5 0 0 0 2.5-2.5v-12Zm-7.765 5.868a1.221 1.221 0 0 1 0 2.264l-6.626 2.776A1.153 1.153 0 0 1 8 18.123v-5.746a1.151 1.151 0 0 1 1.609-1.035l6.626 2.776ZM19.564 1.677a.25.25 0 0 0-.177-.427H15.6a.106.106 0 0 0-.072.03l-4.54 4.543a.25.25 0 0 0 .177.427h3.783c.027 0 .054-.01.073-.03l4.543-4.543ZM22.071 1.318a.047.047 0 0 0-.045.013l-4.492 4.492a.249.249 0 0 0 .038.385.25.25 0 0 0 .14.042h5.784a.5.5 0 0 0 .5-.5v-2a2.5 2.5 0 0 0-1.925-2.432ZM13.014 1.677a.25.25 0 0 0-.178-.427H9.101a.106.106 0 0 0-.073.03l-4.54 4.543a.25.25 0 0 0 .177.427H8.4a.106.106 0 0 0 .073-.03l4.54-4.543ZM6.513 1.677a.25.25 0 0 0-.177-.427H2.5A2.5 2.5 0 0 0 0 3.75v2a.5.5 0 0 0 .5.5h1.4a.106.106 0 0 0 .073-.03l4.54-4.543Z"/></g></svg> --}}
                                     <img class="size-8" src="{{ asset('storage/logo/mission.svg')}}" alt="mission logo">
                                 </div>
@@ -123,7 +123,7 @@
                                 <div class="pt-3 sm:pt-5">
                                     <h2 class="text-xl font-semibold text-black">Core Mission and Values</h2>
 
-                                    <p class="mt-4 text-sm/relaxed">
+                                    <p class="mt-4 text-sm/relaxed text-black">
                                         Tau Gamma Phi, also known as the Triskelions’ Grand Fraternity, upholds a mission dedicated to community service, leadership, and camaraderie. Established with the values of integrity, resilience, and unity, Tau Gamma Phi has long been committed to positive social impact. Members are encouraged to engage actively in community projects, volunteerism, and humanitarian efforts, driven by a sense of duty to uplift the lives of those in need.
                                     </p>
                                  
@@ -135,31 +135,31 @@
 
                             <a
                                 
-                                class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10"
+                                class="flex items-start gap-4 rounded-lg backdrop-blur-md bg-white/30 p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10"
                             >
-                                <div class="hidden md:flex size-12 shrink-0 items-center justify-center rounded-full bg-yellow-100  sm:size-16">
+                                <div class="hidden md:flex size-12 shrink-0 items-center justify-center rounded-full   sm:size-16">
                                     <img class="size-8" src="{{ asset('storage/logo/unity.svg')}}" alt="unity in action logo">
                                 </div>
 
                                 <div class="pt-3 sm:pt-5">
                                     <h2 class="text-xl font-semibold text-black">Unity in Action</h2>
 
-                                    <p class="mt-4 text-sm/relaxed">
+                                    <p class="mt-4 text-sm/relaxed text-black">
                                         The fraternity believes that true brotherhood is best demonstrated through action. Guided by the Triskelion principle of "Strength in Unity," Tau Gamma Phi members work collectively to support and empower communities across various initiatives. These projects often address vital societal needs, including education, health, disaster relief, and environmental conservation. Whether through organizing outreach programs, delivering aid, or facilitating training workshops, Tau Gamma Phi members embody the spirit of altruism by extending a helping hand to the underserved.
                                 </div>
 
                                 {{-- <svg class="size-6 shrink-0 self-center stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg> --}}
                             </a>
 
-                            <div class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10">
-                                <div class="hidden md:flex size-12 shrink-0 items-center justify-center rounded-full bg-yellow-100  sm:size-16">
+                            <div class="flex items-start gap-4 rounded-lg backdrop-blur-md bg-white/30 p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10">
+                                <div class="hidden md:flex size-12 shrink-0 items-center justify-center rounded-full   sm:size-16">
                                     <img class="size-8" src="{{ asset('storage/logo/legacy.svg')}}" alt="legacy of service logo">
                                 </div>
 
                                 <div class="pt-3 sm:pt-5">
                                     <h2 class="text-xl font-semibold text-black">A Legacy of Service</h2>
 
-                                    <p class="mt-4 text-sm/relaxed">
+                                    <p class="mt-4 text-sm/relaxed text-black">
                                         This mission of service reflects a commitment to building a brighter future through shared responsibility and genuine compassion. Tau Gamma Phi’s dedication to serving humanity is rooted in voluntary action, fostering a culture of generosity and selflessness. This enduring legacy not only strengthens the bonds among members but also leaves a lasting impact on the communities they serve.
                                     </p>
                                 </div>
@@ -167,9 +167,9 @@
                         </div>
                     </main>
 
-                    {{-- <footer class="py-16 text-center text-sm text-black">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </footer> --}}
+                    <footer class="py-16 text-center text-sm text-yellow-500">
+                        © 2024 SJMC, All rights reserved.
+                    </footer>
                 </div>
             </div>
         </div>
