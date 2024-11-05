@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="backdrop-blur-md bg-white/30 border-b border-gray-100">
+<nav x-data="{ open: false }" class="backdrop-blur-md bg-white/30 border-b border-gray-100 fixed w-full z-20 top-0 left-0 mb-20">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -80,7 +80,7 @@
                 @endif
 
                 <!-- Settings Dropdown -->
-                <div class="ms-3 relative">
+                <div class="ms-3 relative ">
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
@@ -102,7 +102,7 @@
 
                         <x-slot name="content">
                             <!-- Account Management -->
-                            <div class="block px-4 py-2 text-xs text-gray-400">
+                            <div class="block px-4 py-2 text-xs text-black">
                                 {{ __('Manage Account') }}
                             </div>
 
@@ -146,7 +146,7 @@
 
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
-        <div class="pt-2 pb-3 space-y-1 ">
+        <div class="pt-2 pb-3 space-y-1 text-black">
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
@@ -172,8 +172,8 @@
                 @endif
 
                 <div>
-                    <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
-                    <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                    <div class="font-medium text-base text-black">{{ Auth::user()->name }}</div>
+                    <div class="font-medium text-sm text-black">{{ Auth::user()->email }}</div>
                 </div>
             </div>
 

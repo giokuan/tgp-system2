@@ -1,4 +1,4 @@
-<table class=" w-full relative font-sans text-xs " x-data="{ selected: @entangle('selected') }">
+<table class="w-full relative font-sans text-xs " x-data="{ selected: @entangle('selected') }">
     <thead class="border-b  border-neutral-200 dark:border-neutral-700">
     <tr class="group">
         @if($this->canSelect())

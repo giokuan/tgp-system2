@@ -20,7 +20,7 @@
             @endif
         </h3>
 
-        <div class="mt-3 max-w-xl text-sm text-gray-600">
+        <div class="mt-3 max-w-xl text-sm text-black">
             <p>
                 {{ __('When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone\'s Google Authenticator application.') }}
             </p>
@@ -28,7 +28,7 @@
 
         @if ($this->enabled)
             @if ($showingQrCode)
-                <div class="mt-4 max-w-xl text-sm text-gray-600">
+                <div class="mt-4 max-w-xl text-sm text-black">
                     <p class="font-semibold">
                         @if ($showingConfirmation)
                             {{ __('To finish enabling two factor authentication, scan the following QR code using your phone\'s authenticator application or enter the setup key and provide the generated OTP code.') }}
@@ -42,7 +42,7 @@
                     {!! $this->user->twoFactorQrCodeSvg() !!}
                 </div>
 
-                <div class="mt-4 max-w-xl text-sm text-gray-600">
+                <div class="mt-4 max-w-xl text-sm text-black">
                     <p class="font-semibold">
                         {{ __('Setup Key') }}: {{ decrypt($this->user->two_factor_secret) }}
                     </p>

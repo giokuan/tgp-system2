@@ -1,4 +1,4 @@
-<div class="m-2 flex flex-col gap-3 relative "
+<div class="m-2 flex flex-col gap-3 relative mt-28"
     wire:init="init"
     @if(strlen($polling = $this->polling()) > 0) wire:poll.{{ $polling }} @endif
 >
