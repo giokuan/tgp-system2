@@ -5,3 +5,7 @@
 [x-cloak] {
     display: none;
 }
+
+#nprogress .bar {
+    background: #f59e0b !important;
+}

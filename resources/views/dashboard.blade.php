@@ -1,15 +1,9 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+    {{-- <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight mt-16">
             {{ __('Dashboard') }}
         </h2>
-    </x-slot>
-
-    {{-- <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-     
-                <livewire:member-table/>
-    
-        </div>
-    </div> --}}
+    </x-slot> --}}
+    <x-welcome></x-welcome>
+   
 </x-app-layout>
