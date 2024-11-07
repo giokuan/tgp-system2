@@ -3,7 +3,7 @@
     <x-mary-toast />
     <form wire:submit="save" method="POST">
         <div class="mt-4 border-2 border-yellow-400 rounded-lg xl:mx-14">
-            <div class="mt-10 font-bold text-center text-yellow-500">Complete your Profile</div>
+            <div class="mt-10 font-bold text-center text-yellow-500">Complete your Information</div>
 
             <div class="pl-2">
                 <x-mary-file wire:model="photo" accept="image/png, image/jpeg">
@@ -13,7 +13,7 @@
 
 
             <div class="p-2">
-                <div class="flex flex-col gap-2 lg:flex-row">
+                <div class="flex flex-col lg:gap-2 lg:flex-row">
                     <input type="text" wire:model="last_name" name="last_name"
                         class="block w-full px-4 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="Last Name" />
@@ -23,8 +23,8 @@
                         @enderror
                     </div>
                     <input type="text" wire:model="first_name" name="first_name"
-                        class="block w-full px-4  mt-1 backdrop-blur-md bg-white/30  border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
-                        placeholder="First Name" autocomplete="given-name" />
+                        class="block w-full px-4 py-4 mt-1 backdrop-blur-md bg-white/30  border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
+                        placeholder="First Name"  />
                     <div>
                         @error('first_name')
                             <span class="error">{{ $message }}</span>
@@ -33,27 +33,28 @@
                     <input type="text" wire:model="middle_name" name="middle_name"
                         class="block w-full px-4 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="Middle Name" />
+                      
                     <div>
                         @error('middle_name')
                             <span class="error">{{ $message }}</span>
                         @enderror
                     </div>
                 </div>
-                <div class="flex flex-col gap-2 my-6 lg:flex-row">
+                <div class="flex flex-col gap-1 lg:gap-4 lg:my-2 lg:flex-row">
                     <input type="email" wire:model="email" name="email"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
-                        placeholder="Email" autocomplete="email" />
+                        placeholder="Email" autocomplete="email" disabled/>
                     @error('email')
                         <span class="error">{{ $message }}</span>
                     @enderror
                     <input type="text" wire:model="phone" name="phone"
-                        class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
+                        class="block w-full px-3 py-4 lg:mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="Phone" autocomplete="phone" />
                     @error('phone')
                         <span class="error">{{ $message }}</span>
                     @enderror
                 </div>
-                <div class="flex flex-col gap-4 my-6 lg:flex-row">
+                <div class="flex flex-col lg:gap-4 lg:my-2 lg:flex-row">
                     <input type="text" wire:model="aka" name="aka"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="AKA" />
@@ -73,7 +74,7 @@
                         <span class="error">{{ $message }}</span>
                     @enderror
                 </div>
-                <div class="flex flex-col gap-4 lg:flex-row">
+                <div class="flex flex-col lg:gap-4 lg:flex-row">
                     <input type="text" wire:model="gt" name="gt"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="GT" />
@@ -99,11 +100,11 @@
                         <span class="error">{{ $message }}</span>
                     @enderror
                 </div>
-                <div class="flex flex-col my-2 lg:gap-4 lg:flex-row">
+                <div class="flex flex-col lg:gap-4 lg:flex-row">
                     <!-- resources/views/livewire/address-dropdown.blade.php -->
 
-                    <div class="flex flex-col w-full xl:gap-4 ">
-                        <div class="flex flex-col w-full my-4 lg:gap-4 lg:flex-row">
+                    <div class="flex flex-col  w-full lg:gap-4 ">
+                        <div class="flex flex-col w-full gap-1 mt-1 lg:mt-4 lg:gap-4 lg:flex-row">
                             <select wire:model="selectedRegion" wire:change="setSelectedRegion($event.target.value) "
                                 name="selectedRegion"
                                 class="w-full px-3 py-4  backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm">
@@ -132,10 +133,10 @@
 
                         </div>
 
-                        <div class="flex flex-col w-full gap-4 lg:flex-row">
+                        <div class="flex flex-col w-full gap-1 lg:gap-4 lg:flex-row">
                             <select wire:model="selectedMunicipality"
                                 wire:change="setSelectedMunicipality($event.target.value)" name="selectedMunicipality"
-                                class="w-full px-3 py-4  backdrop-blur-md bg-white/30 rounded-md shadow-sm border-slate-300 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm">
+                                class="w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 rounded-md shadow-sm border-slate-300 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm">
                                 <option value="">Select Municipality</option>
                                 @if ($selectedRegion && $selectedProvince)
                                     @foreach ($regions[$selectedRegion]['province_list'][$selectedProvince]['municipality_list'] as $municipality => $data)
@@ -149,7 +150,7 @@
 
 
                             <select wire:model="selectedBarangay" name="selectedBarangay"
-                                class="w-full px-3 py-2 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm">
+                                class="w-full px-3 py-4 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm">
                                 <option value="">Select Barangay</option>
                                 @if ($selectedRegion && $selectedProvince && $selectedMunicipality)
                                     @foreach ($regions[$selectedRegion]['province_list'][$selectedProvince]['municipality_list'][$selectedMunicipality]['barangay_list'] as $barangay)
@@ -169,7 +170,7 @@
                     class="block w-full px-3 py-4 mt-1  border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                     placeholder="User Type" />
 
-                <div class="my-6">
+                <div class="mt-1 lg:my-4">
                     <textarea type="text" wire:model="address" id="address" cols="30" rows="4" name="address"
                         class="w-full h-20 p-5 backdrop-blur-md bg-white/30 mb-6 text-yellow-500 border rounded-md resize-none border-slate-300  placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         autocomplete="street-address" placeholder="Address">Complete Address</textarea>

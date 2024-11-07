@@ -11,6 +11,9 @@ use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Support\Facades\Storage;
 
+
+
+
 class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens;

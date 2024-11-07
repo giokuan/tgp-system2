@@ -17,10 +17,14 @@ Route::middleware([
     })->name('dashboard');
 });
 
-
-Route::get('/profile-complete', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/profile-complete', function () {
     return view('profile-complete');
 })->name('profile-complete');
+
+
+// Route::get('/profile-complete', function () {
+//     return view('profile-complete');
+// })->name('profile-complete');
 
 
 Route::get('/member-view/{id}', function ($id) {
