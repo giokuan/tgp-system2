@@ -4,6 +4,7 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot> --}}
-    <x-welcome></x-welcome>
+    {{-- <x-welcome></x-welcome> --}}
+    <livewire:report-status />
    
 </x-app-layout>
