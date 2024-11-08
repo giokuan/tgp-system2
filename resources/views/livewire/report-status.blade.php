@@ -11,7 +11,7 @@
         </div>
         <div class="border-t border-blue-gray-50 p-4">
           <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
-            <strong class="text-green-500">+55%</strong>&nbsp;than last week
+            {{-- <strong class="text-green-500">+55%</strong>&nbsp;than last week --}}
           </p>
         </div>
       </div>
@@ -26,7 +26,7 @@
         </div>
         <div class="border-t border-blue-gray-50 p-4">
           <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
-            <strong class="text-green-500">+3%</strong>&nbsp;than last month
+            {{-- <strong class="text-green-500">+3%</strong>&nbsp;than last month --}}
           </p>
         </div>
       </div>
@@ -41,7 +41,7 @@
         </div>
         <div class="border-t border-blue-gray-50 p-4">
           <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
-            <strong class="text-red-500">-2%</strong>&nbsp;than yesterday
+            {{-- <strong class="text-red-500">-2%</strong>&nbsp;than yesterday --}}
           </p>
         </div>
       </div>
@@ -55,7 +55,7 @@
         </div>
         <div class="border-t border-blue-gray-50 p-4">
           <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
-            <strong class="text-green-500">+5%</strong>&nbsp;than yesterday
+            {{-- <strong class="text-green-500">+5%</strong>&nbsp;than yesterday --}}
           </p>
         </div>
       </div>

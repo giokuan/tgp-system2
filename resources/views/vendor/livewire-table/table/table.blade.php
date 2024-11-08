@@ -8,7 +8,7 @@
         @endif
         @foreach($table['columns'] as $column)
             @continue(! in_array($column->code(), $this->columns))
-            <th class="p-0 text-left text-black backdrop-blur-md bg-white/30 dark:text-white dark:bg-neutral-800">
+            <th class="p-0 text-left text-black   dark:text-white dark:bg-neutral-800">
                 {{ $column->renderHeader() }}
             </th>
         @endforeach
@@ -38,7 +38,7 @@
         </tr>
     @else
         @forelse($paginator->items() as $item)
-            <tr class="group"
+            <tr class="group "
                 wire:key="row-{{ $item->getKey() }}"
 
                 @if($this->isReordering())
@@ -58,7 +58,7 @@
                 @if($this->canSelect())
                     <td class="p-0 "
                         x-bind:class="~selected.indexOf('{{ $item->getKey() }}')
-                                ? 'backdrop-blur-md bg-white/30 group-odd:bg-blue-100 group-hover:bg-blue-200 dark:bg-blue-900 dark:group-odd:bg-blue-900 dark:group-hover:bg-blue-800'
+                                ? ' group-odd:bg-blue-100 group-hover:bg-blue-200 dark:bg-blue-900 dark:group-odd:bg-blue-900 dark:group-hover:bg-blue-800'
                                 : 'bg-neutral-100 group-odd:bg-white group-hover:bg-neutral-200 dark:bg-neutral-800 dark:group-odd:bg-neutral-900 dark:group-hover:bg-neutral-700'">
                         <div class="mx-3">
                             <input type="checkbox" wire:model.live="selected" value="{{ $item->getKey() }}" class="size-4">
