@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Select;
+use Illuminate\Support\Facades\Auth;
 
 class UserResource extends Resource
 {
@@ -41,7 +42,8 @@ class UserResource extends Resource
                     'moderator' => 'Moderator',
                 ])
                 ->required()
-                ->label('User Type'),
+                ->label('User Type')
+                ->visible(fn() => Auth::user()->user_type === 'admin'),
                 
                 TextInput::make('password')
                 ->password()
@@ -60,11 +62,14 @@ class UserResource extends Resource
                 TextColumn::make('id')
                 ->label('User Id'),
                 TextColumn::make('name')
-                ->label('Name'),
+                ->label('Name')
+                ->sortable()
+                ->searchable(),
                 TextColumn::make('email')
                 ->label('Email'),
                 TextColumn::make('user_type')
-                ->label('User Type'),
+                ->label('User Type')
+                ->searchable(),
             ])
             ->filters([
                 //
