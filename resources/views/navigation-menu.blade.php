@@ -24,6 +24,10 @@
                         {{ __('Member') }}
                     </x-nav-link>
                 </div>
+
+
+        
+            
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ms-6">
@@ -162,6 +166,8 @@
             <x-responsive-nav-link href="{{ route('member') }}" :active="request()->routeIs('member')">
                 {{ __('Member') }}
             </x-responsive-nav-link>
+
+          
         </div>
 
         {{-- <div class="pt-2 pb-3 space-y-1">

@@ -13,7 +13,7 @@
 
 
             <div class="p-2">
-                <div class="flex flex-col lg:gap-2 lg:flex-row">
+                <div class="flex flex-col lg:gap-0 lg:flex-row">
                     <input type="text" wire:model="last_name" name="last_name"
                         class="block w-full px-4 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="Last Name" />
@@ -23,7 +23,7 @@
                         @enderror
                     </div>
                     <input type="text" wire:model="first_name" name="first_name"
-                        class="block w-full px-4 py-4 mt-1 backdrop-blur-md bg-white/30  border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
+                        class="block w-full px-4 mx-4 py-4 mt-1 backdrop-blur-md bg-white/30  border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="First Name"  />
                     <div>
                         @error('first_name')
