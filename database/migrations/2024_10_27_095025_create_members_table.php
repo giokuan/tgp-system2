@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string('current_chapter');
             $table->string('root_chapter');
             $table->string('status');
-            $table->string('user_type');
+            // $table->string('user_type');
             $table->string('region');
             $table->string('province');
             $table->string('municipality');

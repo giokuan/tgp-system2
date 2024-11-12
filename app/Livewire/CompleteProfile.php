@@ -68,7 +68,7 @@ class CompleteProfile extends Component
     #[Validate('required')]
     public $selectedBarangay;
 
-    public $user_type="";
+    // public $user_type="";
 
     public $user;
     public $memberId;
@@ -116,7 +116,7 @@ class CompleteProfile extends Component
         'current_chapter' => strtoupper($this->current_chapter),
         'root_chapter' => strtoupper($this->root_chapter),
         'status' => strtoupper($this->status),
-        'user_type' => strtoupper($this->user_type),
+        // 'user_type' => strtoupper($this->user_type),
         'address' => strtoupper($this->address),
         'region' => strtoupper($this->selectedRegion),
         'province' => strtoupper($this->selectedProvince),
@@ -157,7 +157,7 @@ class CompleteProfile extends Component
     
         $this->user = Auth::user(); // Set $this->user to the authenticated user object
         $this->email = $this->user->email;
-        $this->user_type = $this->user->user_type;
+        // $this->user_type = $this->user->user_type;
     }
     
     public function setSelectedRegion($value)

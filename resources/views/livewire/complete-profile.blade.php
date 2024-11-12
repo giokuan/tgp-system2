@@ -166,9 +166,9 @@
                         </div>
                     </div>
                 </div>
-                <input type="hidden" wire:model="user_type" name="user_type"
+                {{-- <input type="hidden" wire:model="user_type" name="user_type"
                     class="block w-full px-3 py-4 mt-1  border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
-                    placeholder="User Type" />
+                    placeholder="User Type" /> --}}
 
                 <div class="mt-1 lg:my-4">
                     <textarea type="text" wire:model="address" id="address" cols="30" rows="4" name="address"

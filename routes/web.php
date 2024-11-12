@@ -17,6 +17,11 @@ Route::middleware([
     })->name('dashboard');
 });
 
+
+Route::get('edit-profile/{member_id}', function ($member_id) {
+    return view('edit-profile', compact('member_id'));
+})->name('edit-profile');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/profile-complete', function () {
     return view('profile-complete');
 })->name('profile-complete');

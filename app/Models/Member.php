@@ -27,7 +27,7 @@ class Member extends Model
         'root_chapter',
         'status',
         'user_id',
-        'user_type',
+        // 'user_type',
         
         'region',
         'province',

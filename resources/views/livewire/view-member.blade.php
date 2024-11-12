@@ -141,12 +141,14 @@
                    BACK
                </button>
 
-                                       {{-- <a wire:navigate href="{{ route('edit-profile', ['member_id' => $member->member_id]) }}"
-               class="w-full bg-gre text-md md:text-md mt-2 text-gray-500  
-                   hover:text-teal-600 border-gray-500 hover:bg-gray-700 hover:border-teal-600 dark:hover:bg-gray-500 rounded p-3 pt-2 shadow-lg flex  
+               @if(in_array(Auth::user()->user_type, ['admin', 'moderator']))
+                <a wire:navigate href="{{ route('edit-profile', ['member_id' => $member->member_id]) }}"
+                    class="w-full bg-gre text-md md:text-md mt-2 text-black 
+                   hover:text-yellow-500 border-black hover:bg-gray-700 hover:border-yellow-500 dark:hover:bg-gray-500 rounded p-3 pt-2 shadow-lg flex  
                    justify-center dark:bg-[#222738] dark:shadow-xl border">
                EDIT
-               </a> --}}
+               </a>
+               @endif
            </div>
        </div>
    </div>
