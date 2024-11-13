@@ -44,6 +44,7 @@ class EditProfile extends Component
     public $address;
 
     public $photoPath;
+  
 
     
 
@@ -51,17 +52,19 @@ class EditProfile extends Component
 
 
 
-    public function mount()
+    public function mount($member_id)
     {
         // $this->regions = json_decode(Storage::disk('public')->get('address-api.json'), true);
 
         $json = Storage::disk('public')->get('address-api.json');
         $this->regions = json_decode($json, true);
 
-        $userId = Auth::id();
+        // $userId = Auth::id();
+        $this->member_id = $member_id;
         
         // $this->members = Member::where('user_id', auth()->user()->id)->first();
-        $this->members = Member::where('user_id', Auth::id())->first();
+        // $this->members = Member::where('user_id', Auth::id())->first();
+        $this->members = Member::where('member_id', $this->member_id)->firstOrFail();
 
         
         // dd($this->members);
@@ -138,7 +141,9 @@ class EditProfile extends Component
 
     public function updateProfile()
 {
-    $member = Member::where('user_id', Auth::id())->first();
+    // $member = Member::where('user_id', Auth::id())->first();
+
+    $member = Member::where('member_id', $this->member_id)->firstOrFail();
 
     // Store the current photo path
     // $photoPath = $member->photo;

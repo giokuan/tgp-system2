@@ -191,5 +191,12 @@ class CompleteProfile extends Component
     }
 
   
+    // public function showProfileToast()
+    // {
+    //     $this->dispatchBrowserEvent('show-toast', [
+    //         'message' => 'Please complete your profile first!',
+    //         'type' => 'warning'
+    //     ]);
+    // }
 
 }

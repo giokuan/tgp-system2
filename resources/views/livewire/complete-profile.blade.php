@@ -13,98 +13,127 @@
 
 
             <div class="p-2">
-                <div class="flex flex-col lg:gap-0 lg:flex-row">
-                    <input type="text" wire:model="last_name" name="last_name"
-                        class="block w-full px-4 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
-                        placeholder="Last Name" />
-                    <div>
+                <div class="flex flex-col lg:flex-row">
+                   
+                    <div class="flex flex-col lg:w-full mb-2 lg:mb-0">
+                        <input type="text" wire:model="last_name" name="last_name"
+                               class="w-full px-4 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm flex-grow"
+                               placeholder="Last Name" />
                         @error('last_name')
-                            <span class="error">{{ $message }}</span>
+                            <span class="text-red-500 ">{{ $message }}</span>
                         @enderror
                     </div>
-                    <input type="text" wire:model="first_name" name="first_name"
-                        class="block w-full px-4 mx-4 py-4 mt-1 backdrop-blur-md bg-white/30  border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
-                        placeholder="First Name"  />
-                    <div>
+
+                    <div class="flex flex-col lg:mx-4 mb-2 lg:mb-0 lg:w-full">
+                        <input type="text" wire:model="first_name" name="first_name"
+                               class="w-full px-4 py-4 mt-1  backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm flex-grow"
+                               placeholder="First Name" />
                         @error('first_name')
-                            <span class="error">{{ $message }}</span>
+                            <span class="text-red-500 ">{{ $message }}</span>
                         @enderror
                     </div>
-                    <input type="text" wire:model="middle_name" name="middle_name"
-                        class="block w-full px-4 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
-                        placeholder="Middle Name" />
-                      
-                    <div>
+                    <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
+                        <input type="text" wire:model="middle_name" name="middle_name"
+                               class="w-full px-4 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm flex-grow"
+                               placeholder="Middle Name" />
                         @error('middle_name')
-                            <span class="error">{{ $message }}</span>
+                            <span class="text-red-500  ">{{ $message }}</span>
                         @enderror
                     </div>
                 </div>
+
+                  
                 <div class="flex flex-col gap-1 lg:gap-4 lg:my-2 lg:flex-row">
+                    <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                     <input type="email" wire:model="email" name="email"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="Email" autocomplete="email" disabled/>
                     @error('email')
-                        <span class="error">{{ $message }}</span>
+                        <span class="error text-red-500">{{ $message }}</span>
                     @enderror
+                    </div>
+
+                    <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                     <input type="text" wire:model="phone" name="phone"
                         class="block w-full px-3 py-4 lg:mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="Phone" autocomplete="phone" />
                     @error('phone')
-                        <span class="error">{{ $message }}</span>
+                        <span class="error text-red-500 ">{{ $message }}</span>
                     @enderror
+                    </div>
                 </div>
                 <div class="flex flex-col lg:gap-4 lg:my-2 lg:flex-row">
+                    <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                     <input type="text" wire:model="aka" name="aka"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="AKA" />
                     @error('aka')
-                        <span class="error">{{ $message }}</span>
+                        <span class="error text-red-500 ">{{ $message }}</span>
                     @enderror
+                    </div>
+
+                    <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                     <input type="text" wire:model="batch_name" name="batch_name"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="Batch Name" aria-atomic="" />
                     @error('batch_name')
-                        <span class="error">{{ $message }}</span>
+                        <span class="error text-red-500 ">{{ $message }}</span>
                     @enderror
+                    </div>
+
+                    <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                     <input type="date" wire:model="t_birth" name="t_birth"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="T-Birth" />
                     @error('t_birth')
-                        <span class="error">{{ $message }}</span>
+                        <span class="error text-red-500">{{ $message }}</span>
                     @enderror
+                    </div>
                 </div>
+
                 <div class="flex flex-col lg:gap-4 lg:flex-row">
+                    <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                     <input type="text" wire:model="gt" name="gt"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="GT" />
                     @error('gt')
-                        <span class="error">{{ $message }}</span>
+                        <span class="error text-red-500">{{ $message }}</span>
                     @enderror
+                    </div>
+
+                    <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                     <input type="text" wire:model="current_chapter" name="current_chapter"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="Current Chapter" />
                     @error('current_chapter')
-                        <span class="error">{{ $message }}</span>
+                        <span class="error text-red-500">{{ $message }}</span>
                     @enderror
+                    </div>
+
+                    <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                     <input type="text" wire:model="root_chapter" name="root_chapter"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="Root Chapter" />
                     @error('root_chapter')
-                        <span class="error">{{ $message }}</span>
+                        <span class="error text-red-500">{{ $message }}</span>
                     @enderror
+                    </div>
+
+                    <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                     <input type="text" wire:model="status" name="status"
                         class="block w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder-slate-400 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         placeholder="Status" />
                     @error('status')
-                        <span class="error">{{ $message }}</span>
+                        <span class="error text-red-500">{{ $message }}</span>
                     @enderror
+                    </div>
                 </div>
                 <div class="flex flex-col lg:gap-4 lg:flex-row">
                     <!-- resources/views/livewire/address-dropdown.blade.php -->
 
                     <div class="flex flex-col  w-full lg:gap-4 ">
                         <div class="flex flex-col w-full gap-1 mt-1 lg:mt-4 lg:gap-4 lg:flex-row">
+                            <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                             <select wire:model="selectedRegion" wire:change="setSelectedRegion($event.target.value) "
                                 name="selectedRegion"
                                 class="w-full px-3 py-4  backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm">
@@ -114,11 +143,12 @@
                                 @endforeach
                             </select>
                             @error('selectedRegion')
-                                <span class="error">{{ $message }}</span>
+                                <span class="error text-red-500">{{ $message }}</span>
                             @enderror
+                            </div>
 
 
-
+                            <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                             <select wire:model="selectedProvince"
                                 wire:change="setSelectedProvince($event.target.value)" name="selectedProvince"
                                 class="w-full px-3 py-4  backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm">
@@ -128,12 +158,14 @@
                                 @endforeach
                             </select>
                             @error('selectedProvince')
-                                <span class="error">{{ $message }}</span>
+                                <span class="error text-red-500">{{ $message }}</span>
                             @enderror
+                            </div>
 
                         </div>
 
                         <div class="flex flex-col w-full gap-1 lg:gap-4 lg:flex-row">
+                            <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                             <select wire:model="selectedMunicipality"
                                 wire:change="setSelectedMunicipality($event.target.value)" name="selectedMunicipality"
                                 class="w-full px-3 py-4 mt-1 backdrop-blur-md bg-white/30 rounded-md shadow-sm border-slate-300 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm">
@@ -145,10 +177,11 @@
                                 @endif
                             </select>
                             @error('selectedMunicipality')
-                                <span class="error">{{ $message }}</span>
+                                <span class="error text-red-500">{{ $message }}</span>
                             @enderror
+                            </div>
 
-
+                            <div class="flex flex-col mb-2 lg:mb-0 lg:w-full">
                             <select wire:model="selectedBarangay" name="selectedBarangay"
                                 class="w-full px-3 py-4 backdrop-blur-md bg-white/30 border rounded-md shadow-sm border-slate-300 placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm">
                                 <option value="">Select Barangay</option>
@@ -159,8 +192,9 @@
                                 @endif
                             </select>
                             @error('selectedBarangay')
-                                <span class="error">{{ $message }}</span>
+                                <span class="error text-red-500">{{ $message }}</span>
                             @enderror
+                            </div>
 
 
                         </div>
@@ -172,17 +206,17 @@
 
                 <div class="mt-1 lg:my-4">
                     <textarea type="text" wire:model="address" id="address" cols="30" rows="4" name="address"
-                        class="w-full h-20 p-5 backdrop-blur-md bg-white/30 mb-6 text-yellow-500 border rounded-md resize-none border-slate-300  placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
+                        class="w-full h-20 p-5 backdrop-blur-md bg-white/30  text-yellow-500 border rounded-md resize-none border-slate-300  placeholder:text-black focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 text-sm"
                         autocomplete="street-address" placeholder="Address">Complete Address</textarea>
                     @error('address')
-                        <span class="error">{{ $message }}</span>
+                        <span class="error text-red-500">{{ $message }}</span>
                     @enderror
                 </div>
 
 
                 <div class="text-center ">
                     <button type="submit"
-                        class="px-8 py-2 text-sm font-semibold text-white bg-blue-700 rounded-lg cursor-pointer">Save</button>
+                        class="px-8 py-2 text-sm font-semibold text-white bg-yellow-500 my-2 rounded-lg cursor-pointer">Save</button>
                 </div>
             </div>
         </div>

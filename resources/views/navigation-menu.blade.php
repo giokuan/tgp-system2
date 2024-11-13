@@ -13,17 +13,41 @@
                 
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex ">
+                {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex ">
                     <x-nav-link wire:navigate href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                </div>
+                </div> --}}
 
+                @if (Route::is('profile-complete'))
+    <!-- Navigation Links for profile-complete route -->
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex ">
+                        <x-nav-link wire:navigate href="#" :active="request()->routeIs('dashboard')" >
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                    </div>
+                @else
+                    <!-- Navigation Links for other routes -->
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex ">
+                        <x-nav-link wire:navigate href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" >
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+                    </div>
+                @endif
+
+                @if (Route::is('profile-complete'))
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link wire:navigate href="#" :active="request()->routeIs('member')">
+                        {{ __('Member') }}
+                    </x-nav-link>
+                </div>
+                @else
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="{{ route('member') }}" :active="request()->routeIs('member')">
                         {{ __('Member') }}
                     </x-nav-link>
                 </div>
+                @endif
 
 
         
@@ -118,9 +142,16 @@
                                 {{ __('Manage Account') }}
                             </div>
 
+                            @if (Route::is('profile-complete'))
+                            <x-dropdown-link wire:navigate href="#">
+                                {{ __('Profile') }}
+                            </x-dropdown-link>
+                            @else
                             <x-dropdown-link wire:navigate href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
                             </x-dropdown-link>
+                            @endif
+
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-dropdown-link href="{{ route('api-tokens.index') }}">
@@ -159,13 +190,26 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1 text-black">
+            @if (Route::is('profile-complete'))
+            <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')">
+                {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            @else
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-
+            @endif
+            
+            @if (Route::is('profile-complete'))
+            <x-responsive-nav-link href="#" :active="request()->routeIs('member')">
+                {{ __('Member') }}
+            </x-responsive-nav-link>
+            @else
             <x-responsive-nav-link href="{{ route('member') }}" :active="request()->routeIs('member')">
                 {{ __('Member') }}
             </x-responsive-nav-link>
+            @endif
+
 
           
         </div>
@@ -197,9 +241,16 @@
 
             <div class="mt-3 space-y-1">
                 <!-- Account Management -->
+                @if (Route::is('profile-complete'))
+                <x-responsive-nav-link href="#" :active="request()->routeIs('profile.show')">
+                    {{ __('Profile') }}
+                </x-responsive-nav-link>
+                @else
                 <x-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
                     {{ __('Profile') }}
                 </x-responsive-nav-link>
+                @endif
+
 
 
                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
