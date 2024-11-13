@@ -1,6 +1,7 @@
 <div class="mx-2 md:mx-36 lg:mx-2 xl:mx-36 mt-4">
     <x-mary-toast />
     <form wire:submit="updateProfile" method="POST" enctype="multipart/form-data">
+        @csrf
         <div class="mt-4 border-2 border-yellow-500 rounded-lg xl:mx-14 mb-4">
             <div class="my-4 md:mt-10 font-bold text-yellow-500 text-center">Update Profile</div>
 
@@ -11,16 +12,7 @@
                     <img src="{{ asset('storage/' . $members->photo) }}" class="h-40 rounded-lg" />
                 </x-mary-file>
 
-                {{-- <x-mary-file wire:model="photo" name="photo">
-                    <!-- Image preview -->
-                    @if ($photo)
-                        <img src="{{ $photo->temporaryUrl() }}" class="h-40 rounded-lg" />
-                    @elseif ($members->photo)
-                        <img src="{{ asset('storage/' . $members->photo) }}" class="h-40 rounded-lg" />
-                    @endif
-                </x-mary-file> --}}
-
-
+         
                 <input type="hidden" wire:model="member_id" value="{{ $members->member_id }}" />
                 <input type="hidden" wire:model="id" name="id" value="{{ $members->id }}" />
                 <input type="hidden" wire:model="user_id" name="user_id" value="{{ $members->user_id }}" />

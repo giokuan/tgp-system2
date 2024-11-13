@@ -96,6 +96,11 @@
                        <div class="pl-2 font-semibold dark:text-teal-600">ROOT CHAPTER:</div>
                        <div class="p-2 pl-4 dark:text-gray-500">{{ $member->root_chapter }}</div>
                    </div>
+
+                   <div class="flex items-center shadow">
+                    <div class="pl-2 font-semibold dark:text-teal-600">GT DURING IR:</div>
+                    <div class="p-2 pl-4 dark:text-gray-500">{{ $member->gt }}</div>
+                </div>
                </div>
            </div>
 

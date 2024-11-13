@@ -139,40 +139,86 @@ class EditProfile extends Component
 
 
 
-    public function updateProfile()
-{
-    // $member = Member::where('user_id', Auth::id())->first();
+//     public function updateProfile()
+// {
+//     // $member = Member::where('user_id', Auth::id())->first();
 
+//     $member = Member::where('member_id', $this->member_id)->firstOrFail();
+
+//     // Store the current photo path
+//     // $photoPath = $member->photo;
+
+//     // // Delete the old photo if a new one is being uploaded
+//     // if ($this->photo && $this->photo instanceof \Illuminate\Http\UploadedFile && $this->photo->isValid()) {
+//     //     Storage::delete('public/' . $member->photo);
+//     //     $photoPath = $this->photo->store('uploads', 'public');
+//     // }
+
+//     $oldPhotoPath = $member->photo;
+
+//     // If a new photo is uploaded, delete the old photo and store the new one
+//     if ($this->photo && $this->photo instanceof \Illuminate\Http\UploadedFile && $this->photo->isValid()) {
+//         // Delete the old photo if it exists
+//         if ($oldPhotoPath && Storage::disk('public')->exists($oldPhotoPath)) {
+//             Storage::disk('public')->delete($oldPhotoPath);
+//         }
+//         // Store the new photo with a unique name
+//         $photoPath = $this->photo->store('uploads', 'public');
+//     } else {
+//         // Keep the old photo if no new photo is uploaded
+//         $photoPath = $oldPhotoPath;
+//     }
+
+//     // Update member data, excluding photo if it hasn't changed
+//     $data = [
+//         'user_id' => $this->user_id,
+//         'member_id' => $this->member_id,
+//         'last_name' => strtoupper($this->last_name),
+//         'first_name' => strtoupper($this->first_name),
+//         'middle_name' => strtoupper($this->middle_name),
+//         'email' => strtoupper($this->email),
+//         'phone' => strtoupper($this->phone),
+//         'aka' => strtoupper($this->aka),
+//         'batch_name' => strtoupper($this->batch_name),
+//         't_birth' => $this->t_birth, // Assuming t_birth does not need to be uppercase
+//         'gt' => strtoupper($this->gt),
+//         'current_chapter' => strtoupper($this->current_chapter),
+//         'root_chapter' => strtoupper($this->root_chapter),
+//         'status' => strtoupper($this->status),
+//         'user_type' => strtoupper($this->user_type),
+//         'region' => strtoupper($this->selectedRegion),
+//         'province' => strtoupper($this->selectedProvince),
+//         'municipality' => strtoupper($this->selectedMunicipality),
+//         'barangay' => strtoupper($this->selectedBarangay),
+//         'address' => strtoupper($this->address),
+//     ];
+//     // Only include photo if it has been updated
+//     if ($this->photo) {
+//         $data['photo'] = $photoPath;
+//     }
+
+//     $member->update($data);
+
+//     // Display success message
+//     $this->success("Profile updated successfully!", 'Thank you!', 'toast-top toast-end');
+//     return redirect()->back();
+// }
+
+public function updateProfile()
+{
+    // Fetch the member using the provided member_id
     $member = Member::where('member_id', $this->member_id)->firstOrFail();
 
     // Store the current photo path
-    // $photoPath = $member->photo;
-
-    // // Delete the old photo if a new one is being uploaded
-    // if ($this->photo && $this->photo instanceof \Illuminate\Http\UploadedFile && $this->photo->isValid()) {
-    //     Storage::delete('public/' . $member->photo);
-    //     $photoPath = $this->photo->store('uploads', 'public');
-    // }
-
     $oldPhotoPath = $member->photo;
 
-    // If a new photo is uploaded, delete the old photo and store the new one
-    if ($this->photo && $this->photo instanceof \Illuminate\Http\UploadedFile && $this->photo->isValid()) {
-        // Delete the old photo if it exists
-        if ($oldPhotoPath && Storage::disk('public')->exists($oldPhotoPath)) {
-            Storage::disk('public')->delete($oldPhotoPath);
-        }
-        // Store the new photo with a unique name
-        $photoPath = $this->photo->store('uploads', 'public');
-    } else {
-        // Keep the old photo if no new photo is uploaded
-        $photoPath = $oldPhotoPath;
-    }
+    // Initialize flags
+    $isUpdated = false;  // Flag to track if any field is updated
+    $emptyFields = false;  // Flag to track if any required field is empty
 
-    // Update member data, excluding photo if it hasn't changed
-    $data = [
+    // Prepare the fields data
+    $fields = [
         'user_id' => $this->user_id,
-        'member_id' => $this->member_id,
         'last_name' => strtoupper($this->last_name),
         'first_name' => strtoupper($this->first_name),
         'middle_name' => strtoupper($this->middle_name),
@@ -192,16 +238,53 @@ class EditProfile extends Component
         'barangay' => strtoupper($this->selectedBarangay),
         'address' => strtoupper($this->address),
     ];
-    // Only include photo if it has been updated
-    if ($this->photo) {
-        $data['photo'] = $photoPath;
+
+    // Loop through fields to check if anything is changed
+    foreach ($fields as $key => $value) {
+        // Check if the field is not empty and has been changed
+        if (!empty($value)) {
+            if ($value != $member->$key) {
+                $member->$key = $value;  // Update field value
+                $isUpdated = true;  // Mark as updated
+            }
+        } else {
+            // If the field is empty, mark it as needing attention
+            $emptyFields = true;
+        }
     }
 
-    $member->update($data);
+    // Handle the photo upload separately
+    if ($this->photo && $this->photo instanceof \Illuminate\Http\UploadedFile && $this->photo->isValid()) {
+        // Delete the old photo if it exists
+        if ($oldPhotoPath && Storage::disk('public')->exists($oldPhotoPath)) {
+            Storage::disk('public')->delete($oldPhotoPath);
+        }
+        // Store the new photo
+        $photoPath = $this->photo->store('uploads', 'public');
+        $member->photo = $photoPath;
+        $isUpdated = true;  // Mark as updated because photo has been changed
+    }
 
-    // Display success message
-    $this->success("Profile updated successfully!", 'Thank you!', 'toast-top toast-end');
-    return redirect()->back();
+    // Check if any changes have been made
+    if ($isUpdated) {
+        // If there are empty fields, show a warning message
+        // if ($emptyFields) {
+        //     $this->success("Some fields are empty. Please fill them out.", 'Warning', 'toast-top toast-end');
+        // } else {
+            // Save the updates in the database
+            $member->save();
+            // Display success message
+            $this->success("Profile updated successfully!", 'Thank you!', 'toast-top toast-end');
+        // }
+    } else {
+        // If no changes were made, show a message indicating no update
+        $this->success("No changes were made to the profile.", 'Info', 'toast-top toast-end');
+    }
+
+    // Redirect back to the previous page
+    return redirect()->route('edit-profile', ['member_id' => $this->member_id]);
+
+    
 }
 
 

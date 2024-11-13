@@ -18,7 +18,7 @@ class ViewMember extends Component
         // Handle case where member is not found
         if (!$this->member) {
             session()->flash('error', 'Member not found.');
-            return redirect()->route('some.route'); // Redirect or handle accordingly
+            return redirect()->route('member-view', ['id' => $id]); // Redirect or handle accordingly
         }
     }
 
