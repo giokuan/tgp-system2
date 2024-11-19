@@ -52,3 +52,7 @@ Route::get('/member-view/{id}', function ($id) {
 Route::get('/member', function () {
     return view('member');
 })->name('member');
+
+Route::get('/by-laws', function () {
+    return view('by-laws');
+})->name('by-laws');

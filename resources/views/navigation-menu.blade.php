@@ -49,6 +49,20 @@
                 </div>
                 @endif
 
+                @if (Route::is('by-laws'))
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link wire:navigate href="#" :active="request()->routeIs('by-laws')">
+                        {{ __('By-Laws') }}
+                    </x-nav-link>
+                </div>
+                @else
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link wire:navigate href="{{ route('by-laws') }}" :active="request()->routeIs('by-laws')">
+                        {{ __('By-Laws') }}
+                    </x-nav-link>
+                </div>
+                @endif
+
 
         
             
@@ -209,6 +223,17 @@
                 {{ __('Member') }}
             </x-responsive-nav-link>
             @endif
+
+            @if (Route::is('by-laws'))
+            <x-responsive-nav-link href="#" :active="request()->routeIs('by-laws')">
+                {{ __('By-Laws') }}
+            </x-responsive-nav-link>
+            @else
+            <x-responsive-nav-link href="{{ route('by-laws') }}" :active="request()->routeIs('by-laws')">
+                {{ __('By-Laws') }}
+            </x-responsive-nav-link>
+            @endif
+
 
 
           
