@@ -63,6 +63,20 @@
                 </div>
                 @endif
 
+                @if (Route::is('constitutions'))
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link wire:navigate href="#" :active="request()->routeIs('constitutions')">
+                        {{ __('Constitutions') }}
+                    </x-nav-link>
+                </div>
+                @else
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link wire:navigate href="{{ route('constitutions') }}" :active="request()->routeIs('constitutions')">
+                        {{ __('Constitutions') }}
+                    </x-nav-link>
+                </div>
+                @endif
+
 
         
             
@@ -158,11 +172,11 @@
 
                             @if (Route::is('profile-complete'))
                             <x-dropdown-link wire:navigate href="#">
-                                {{ __('Profile') }}
+                                {{ __('Settings') }}
                             </x-dropdown-link>
                             @else
                             <x-dropdown-link wire:navigate href="{{ route('profile.show') }}">
-                                {{ __('Profile') }}
+                                {{ __('Settings') }}
                             </x-dropdown-link>
                             @endif
 
@@ -234,6 +248,15 @@
             </x-responsive-nav-link>
             @endif
 
+            @if (Route::is('constitutions'))
+            <x-responsive-nav-link href="#" :active="request()->routeIs('constitutions')">
+                {{ __('Constitutions') }}
+            </x-responsive-nav-link>
+            @else
+            <x-responsive-nav-link href="{{ route('constitutions') }}" :active="request()->routeIs('constitutions')">
+                {{ __('Constitutions') }}
+            </x-responsive-nav-link>
+            @endif
 
 
           
@@ -268,11 +291,11 @@
                 <!-- Account Management -->
                 @if (Route::is('profile-complete'))
                 <x-responsive-nav-link href="#" :active="request()->routeIs('profile.show')">
-                    {{ __('Profile') }}
+                    {{ __('Settings') }}
                 </x-responsive-nav-link>
                 @else
                 <x-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
-                    {{ __('Profile') }}
+                    {{ __('Settings') }}
                 </x-responsive-nav-link>
                 @endif
 

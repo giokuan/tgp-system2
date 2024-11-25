@@ -56,3 +56,7 @@ Route::get('/member', function () {
 Route::get('/by-laws', function () {
     return view('by-laws');
 })->name('by-laws');
+
+Route::get('/constitutions', function () {
+    return view('constitutions');
+})->name('constitutions');
