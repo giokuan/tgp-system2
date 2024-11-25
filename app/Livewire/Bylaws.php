@@ -7,12 +7,14 @@ use Livewire\Component;
 class Bylaws extends Component
 {
 
-    public $show = false; // Tracks the state of the collapse component
+    public $group = null; // Tracks the currently open group
 
-    public function toggle()
+    public function toggle($groupName)
     {
-        $this->show = !$this->show;
+        // If the clicked group is already open, close it; otherwise, open it
+        $this->group = $this->group === $groupName ? null : $groupName;
     }
+
 
     
     public function render()
