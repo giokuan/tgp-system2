@@ -1,14 +1,16 @@
 <div class="backdrop-blur-md bg-white/30">
     <x-mary-accordion>
         <!-- Group 1 -->
-        <x-mary-collapse name="group1" :open="$group === 'group1'">
+        <x-mary-collapse name="group1" :open="$group === 'group1'" wire:key="group1" wire:navigate>
             <x-slot:heading>
-                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group1')">
+                {{-- <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group1')"> --}}
+                    <div class="cursor-pointer text-yellow-500" wire:click="toggle('group1')" >
                     Preamble
                 </div>
             </x-slot:heading>
             <x-slot:content>
-                <div class="p-4 text-black">
+           
+                <div class="p-4 text-black" wire:ignore>
                     We, the members of the TAU GAMMA PHI, re-affirming our faith in God, 
                     and adhering to the Tenets and Codes of Conduct of the Fraternity, 
                     in order to strengthen the bond of brotherhood in pursuit of its ultimate goals and objectives, 
@@ -16,17 +18,20 @@
                     to instill and develop the greatest sense of understanding and respect for human dignity under the rule of justice, 
                     freedom and democracy, do ordain and promulgate this constitution.
                 </div>
+              
+            
             </x-slot:content>
         </x-mary-collapse>
 
         <!-- Group 2 -->
-        <x-mary-collapse name="group2" :open="$group === 'group2'">
+        <x-mary-collapse name="group2" :open="$group === 'group2'" wire:key="group2">
             <x-slot:heading>
                 <div class="cursor-pointer text-yellow-500" wire:click="toggle('group2')">
                     Article I
                 </div>
             </x-slot:heading>
             <x-slot:content>
+             
                 <div class="p-4 text-black">
                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
                         Name and Seal
@@ -41,17 +46,19 @@
                         between each of the legs. The official colors of the seal are black and gold.
                    </p>
                 </div>
+            
             </x-slot:content>
         </x-mary-collapse>
 
         <!-- Group 3 -->
-        <x-mary-collapse name="group3" :open="$group === 'group3'">
+        <x-mary-collapse name="group3" :open="$group === 'group3'" wire:key="group3">
             <x-slot:heading>
                 <div class="cursor-pointer text-yellow-500" wire:click="toggle('group3')">
                     Article II
                 </div>
             </x-slot:heading>
             <x-slot:content>
+          
                 <div class="p-4 text-black">
                     <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
                         Declaration of Principles and Policies
@@ -70,16 +77,18 @@
                    </p>
                    
                 </div>
+            
             </x-slot:content>
         </x-mary-collapse>
 
-        <x-mary-collapse name="group4" :open="$group === 'group4'">
+        <x-mary-collapse name="group4" :open="$group === 'group4'" wire:key="group4">
             <x-slot:heading>
                 <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group4')">
                     Article III
                 </div>
             </x-slot:heading>
             <x-slot:content>
+          
                 <div class="p-4 text-black">
                     <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
                         Membership
@@ -114,30 +123,83 @@
                     
                     </div>
                 </div>
+             
             </x-slot:content>
         </x-mary-collapse>
 
-        <x-mary-collapse name="group5" :open="$group === 'group5'">
+        <x-mary-collapse name="group5" :open="$group === 'group5'" wire:key="group5">
             <x-slot:heading>
                 <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group5')">
                     Article IV
                 </div>
             </x-slot:heading>
             <x-slot:content>
+                
                 <div class="p-4 text-black">
                     <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
                         Duties and Responsibilities of a Triskelion
                    </h3>
 
-                        <span class="text-yellow-500">Section 1.</span>Every Triskelion shall strive to lead a morally upright and virtuous life in accordance with the Tenets and Codes of Conduct of the Fraternity.<br> 
-                        <span class="text-yellow-500">Section 2.</span>It shall be the duty of every Triskelion to uphold this Constitution, to give unswerving loyalty to the Fraternity, to actively contribute to its development and welfare and to abide by the rules and regulations issued by its lawful authorities.<br>
-                        <span class="text-yellow-500">Section 3.</span>Every Triskelion is responsible for each other. It shall be his duty to assistand support his fellow Triskelion especially in times of crisis.<br>
-                        <span class="text-yellow-500">Section 4.</span>It shall be the duty of all Triskelions to attend all meetings, and to activelyparticipate in all project and activities of the Fraternity.<br> 
-                        <span class="text-yellow-500">Section 5.</span>It shall be the obligation of all Triskelion to pay the dues/fees set by its lawful authorities.<br> 
+                        <span class="text-yellow-500">Section 1.</span> Every Triskelion shall strive to lead a morally upright and virtuous life in accordance with the Tenets and Codes of Conduct of the Fraternity.<br> 
+                        <span class="text-yellow-500">Section 2.</span> It shall be the duty of every Triskelion to uphold this Constitution, to give unswerving loyalty to the Fraternity, to actively contribute to its development and welfare and to abide by the rules and regulations issued by its lawful authorities.<br>
+                        <span class="text-yellow-500">Section 3.</span> Every Triskelion is responsible for each other. It shall be his duty to assistand support his fellow Triskelion especially in times of crisis.<br>
+                        <span class="text-yellow-500">Section 4.</span> It shall be the duty of all Triskelions to attend all meetings, and to activelyparticipate in all project and activities of the Fraternity.<br> 
+                        <span class="text-yellow-500">Section 5.</span> It shall be the obligation of all Triskelion to pay the dues/fees set by its lawful authorities.<br> 
                         <span class="text-yellow-500">Section 6.</span> It shall be the duty of every qualified Triskelion to register and cast his vote in Fraternity elections, referendum, and plebiscites.<br> 
-                        <span class="text-yellow-500">Section 7.</span>A Triskelion is obligated to exert his best effort to develop his potentials,physical or intellectual, in order to strengthen the Fraternity. Triskelions with special skills and talents shall heed the call of the Fraternity's leadership to lead or take partin an activity designed to countenance any critical or emergency situation.<br> 
-                        <span class="text-yellow-500">Section 8.</span>It is the duty of every Triskelion to recruit new members.<br> 
+                        <span class="text-yellow-500">Section 7.</span> A Triskelion is obligated to exert his best effort to develop his potentials, physical or intellectual, in order to strengthen the Fraternity. Triskelions with special skills and talents shall heed the call of the Fraternity's leadership to lead or take partin an activity designed to countenance any critical or emergency situation.<br> 
+                        <span class="text-yellow-500">Section 8.</span> It is the duty of every Triskelion to recruit new members.<br> 
                 </div>
+             
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group6" :open="$group === 'group6'" wire:key="group6">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group6')">
+                    Article V
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        Rights and Privileges of a Triskelion
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> The right to equal treatment and opportunities shall not be abridgedregardless of religious belief, socio-economic and political status.<br> 
+                        <span class="text-yellow-500">Section 2.</span> Every Triskelion shall have the right to express his opinions on mattersconcerning the Fraternity provided that it is put forth in a constructive manner.<br>
+                        <span class="text-yellow-500">Section 3.</span> The right to be protected against exploitation, improper influences, and other conditions prejudicial to his physical, intellectual, social, political, economic andmoral development shall be guaranteed.<br>
+                        <span class="text-yellow-500">Section 4.</span> Every Triskelion has the right to have access and inspect all books of accounts, records and similar materials of public character pertaining to the fraternity<br> 
+                        <span class="text-yellow-500">Section 5.</span> The right of a Triskelion in good standing to actively participate in all projectsand undertakings of the Fraternity shall always be recognized.<br> 
+                        <span class="text-yellow-500">Section 6.</span> Qualified full-pledged Triskelions in good standing shall have the right to runfor elective positions in the Fraternity subject to the qualifications of the position.<br> 
+                        <span class="text-yellow-500">Section 7.</span> The right to join or organize legitimate organizations whose purposes arecontributory to the enhancement of the Fraternity shall not be impaired.<br> 
+                </div>
+              
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group7" :open="$group === 'group7'" wire:key="group7">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group7')">
+                    Article VI
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        Organization
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> The right to equal treatment and opportunities shall not be abridgedregardless of religious belief, socio-economic and political status.<br> 
+                        <span class="text-yellow-500">Section 2.</span> Every Triskelion shall have the right to express his opinions on mattersconcerning the Fraternity provided that it is put forth in a constructive manner.<br>
+                        <span class="text-yellow-500">Section 3.</span> The right to be protected against exploitation, improper influences, and other conditions prejudicial to his physical, intellectual, social, political, economic andmoral development shall be guaranteed.<br>
+                        <span class="text-yellow-500">Section 4.</span> Every Triskelion has the right to have access and inspect all books of accounts, records and similar materials of public character pertaining to the fraternity<br> 
+                        <span class="text-yellow-500">Section 5.</span> The right of a Triskelion in good standing to actively participate in all projectsand undertakings of the Fraternity shall always be recognized.<br> 
+                        <span class="text-yellow-500">Section 6.</span> Qualified full-pledged Triskelions in good standing shall have the right to runfor elective positions in the Fraternity subject to the qualifications of the position.<br> 
+                        <span class="text-yellow-500">Section 7.</span> The right to join or organize legitimate organizations whose purposes arecontributory to the enhancement of the Fraternity shall not be impaired.<br> 
+                </div>
+                
             </x-slot:content>
         </x-mary-collapse>
     </x-mary-accordion>
