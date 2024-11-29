@@ -79,4 +79,6 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->profile_photo_path ? Storage::url($this->profile_photo_path) : null;
     }
+
+    
 }

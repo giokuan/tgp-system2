@@ -20,6 +20,7 @@ use Filament\Tables\Actions\Action;
 use Mary\Traits\Toast;
 use Filament\Tables\Actions\DeleteAction;
 
+
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
@@ -102,7 +103,6 @@ class UserResource extends Resource
         ];
     }
 
-   
 
   
 }

@@ -429,10 +429,244 @@
                             <li>1. Formulate guidelines and coordinate the formation and strengthening of  Alumni Chapters.</li>
                             <li>2. To ensure that the programs and activities being undertaken by the various alumni chapters are in conformity with this Constitution and in line with the policies set by the National Executive Council.</li>
                         </ul>
-                        <span class="text-yellow-500">Section 6.</span> <br> 
-                        <span class="text-yellow-500">Section 7.</span> <br> 
                 </div>
                 
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group8" :open="$group === 'group8'" wire:key="group8">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group8')">
+                    Article VII
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        National Judicial Council
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> The Premier shall appoint from among the Council of Elders / MDG's members of the Judicial Council who shall serve for a term of four (4) years.<br> 
+                        <span class="text-yellow-500">Section 2.</span> The National Judicial Council shall have the following duties and functions.<br>
+                        <ul>
+                            <li>1. To hear, litigate and decide on all cases pertaining to Constitutional matters against any Triskelion, Chapter, or Council.</li>
+                            <li>2. To review all impeachment, recall and suspension proceedings and render the final decisions for or against any elected official of the Fraternity.</li>
+                            <li>3. To act as the final authority on expulsion of erring members.</li>
+                            <li>4. To automatically constitute itself into the Commission on Election in every national election.</li>
+                        </ul> 
+                </div>
+              
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group9" :open="$group === 'group9'" wire:key="group9">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group9')">
+                    Article VIII
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        Council of Elders
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> It shall act as the advisory arm of the National Council.<br> 
+                        <span class="text-yellow-500">Section 2.</span> The Council of Elders shall be composed of all former Secretary-Generals of all recognized Regional Councils who are in good standing with the Fraternity.<br>
+                        <span class="text-yellow-500">Section 3.</span> The Council of Elders shall elect among themselves such officers, as it may deem necessary.<br> 
+                        
+                </div>
+              
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group10" :open="$group === 'group10'" wire:key="group10">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group10')">
+                    Article IX
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        Local Councils
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> The territorial subdivisions of the Republic of the Philippines except the barangay shall be adopted by the Fraternity. As such, there shall be Regional, Provincial, City, and Municipal Council formations.<br> 
+                        <span class="text-yellow-500">Section 2.</span> The territorial subdivisions of the Fraternity shall enjoy local autonomy.<br>
+                        <span class="text-yellow-500">Section 3.</span> The National Assembly shall enact a Local Council Code which shall providefor a more responsive and accountable local council structure instituted through asystem of decentralization with effective mechanisms of recall, initiative, andconsultations, allocate among the different council units their powers, responsibilities, and resources, and provide for the qualifications, election,appointment, and removal, term, powers, and functions, and duties of local officersand other matters relating to the Fraternity and operation of the local council units.<br> 
+                        <span class="text-yellow-500">Section 4.</span> The National Premier shall exercise general supervision over local council units. Regional Councils with respect to component Provincial Councils, ProvincialCouncils with respect to component City and Municipal Councils, and City and Municipal Councils with respect to component local chapters shall ensure that theacts of their component units are within the scope of their prescribed powers and functions.<br>
+                        <span class="text-yellow-500">Section 5.</span> Each local council unit shall have the power to create its own sources of revenues and levy dues, fees and other charges subject to such guidelines and limitations as the National Assembly may provide, consistent with the basic policy of local autonomy. Such dues, fees, and charges shall accrue exclusively to the local council units.<br>
+                        <span class="text-yellow-500">Section 6.</span> The term of office of the elected local chapter officers, whether school-basedor community-based, and City and Municipal Councils shall be:<br>
+                        <p>
+                            School or Community Based Chapters - One (1) year; Municipal, City, Provincial and Regional Councils - Two (2) years.Provincial Council and Regional Council officers shall serve for two years and nosuch elected officer shall serve for more than two successive terms. Voluntary renunciation of office for any length of time shall not be considered as an interruptionin the continuity of his service for the full term for which he was elected.
+                        </p>
+                        <span class="text-yellow-500">Section 7.</span> No Regional, Provincial, City, Municipal or local chapter unit may be created, divided, merged, abolished, or its boundary substantially altered, except in accordance with the criteria established in the Local Council Code and subject toapproval by the National Executive Council.<br>
+                </div>
+              
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group11" :open="$group === 'group11'" wire:key="group11">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group11')">
+                    Article X
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        Principle of Subsidiarity
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> In conformity with the principle of subsidiarity, functions that may well beperformed by a lower-level structure of the Fraternity shall not be vested in a higher-level structure of the Fraternity. Thus, functions that can be performed efficiently by aschool or community chapter shall not be vested in the City or Municipal Council.Those that can be rendered well by the City or Municipal Council shall not be vestedin the Provincial Council. Those that can be performed by the Provincial Council shall not be vested in the Regional Council. Finally, functions that can be performed well by the Regional Council shall not be given to the National Council. Conflicts anddoubts on jurisdiction between the National Council, Regional Council, and lower level structures of the Fraternity shall be decided expeditiously by the National Judicial Council en banc or in division depending on the seriousness of the controversy.<br> 
+                        <span class="text-yellow-500">Section 2.</span> The sub-division and pattern of the organizational structure of the Regional Council, Provincial Council, City or Municipal Council, and the School-based and Community-based chapters are designed to be similar. However, all Chapters and Councils shall follow the Direct Line of Command. School-based and Community-based Chapters to Municipal or City Councils, to the Provincial Council to the Regional Council up to the National Council.<br>
+                        <span class="text-yellow-500">Section 3.</span> No chapter or council shall be allowed to undertake programs or projects contrary to this Constitution or to national policies.<br> 
+                        <span class="text-yellow-500">Section 4.</span> Officials of the Fraternity in various echelons shall be elected as follows:<br>
+                        <ul>
+                            <li>The school-Based and Community-Based Chapter officials shall be elected by its mass membership or body.</li>
+                            <li>The Municipal or City Council officials shall be elected by members of the Municipal Assembly.</li>
+                            <li>The Provincial Council officers shall be elected by the members of the Provincial Assembly.</li>
+                            <li>The Regional Council Officials shall be elected by the members of the Regional Assembly.</li>
+                            <li>The National Council officials shall be elected by the members of the National Assembly which shall be composed of all the Regional Secretary Generals and Provincial Governor General upon consultation with their respective Regional Assemblies.</li>
+                            
+                        </ul>
+                </div>
+              
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group12" :open="$group === 'group12'" wire:key="group12">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group12')">
+                    Article XI
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        Accountability of Officers
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> All officers, whether elected or appointed, shall at all times be accountable to the general membership of the Tau Gamma Phi Fraternity and shall serve them with utmost honesty, responsibility, integrity, loyalty and efficiency.<br> 
+                        <span class="text-yellow-500">Section 2.</span> The Premier, the Executive Vice-Premier, the Vice-Premiers and the members of the National Assembly may be removed from office on impeachment for and conviction of culpable violation of this Constitution and the Tenets and Codes of Conduct, graft and corruption and other high crimes or betrayal of Fraternal trust.<br>
+                        <span class="text-yellow-500">Section 3.</span> The National Executive Secretary and the members of the National Secretariat may be removed from office by the Premier.<br> 
+                        <span class="text-yellow-500">Section 4.</span> <br>
+                        <ul>
+                            <li>1. The National Assembly shall have the power to initiate all cases of impeachment.</li>
+                            <li>2. A verified complaint for impeachment of any National Officer may be filed by any member of the National Assembly or any member of the Fraternity through the proper bodies.</li>
+                            <li>3. The members of the National Assembly and the National Judicial Council shallbe on oath during the whole proceedings. No officer shall be convicted without the concurrence of three-fourths (¾) of the members of the National Assembly.</li>
+                            <li>4. The Chairman of the National Judicial Council shall preside over the proceedings if the Premier is on trial. He shall vote only in case of deadlock.</li>
+                            <li>5. The National Assembly shall promulgate its rules on impeachment to effectively carry out the purpose of this article.</li>
+                        </ul>
+                        
+                </div>
+              
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group13" :open="$group === 'group13'" wire:key="group13">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group13')">
+                    Article XII
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        General Provsions
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> The Fraternity shall inculcate patriotism and nationalism, international solidarity, foster love of humanity, respect human rights, strengthen, spiritual and ethnical values, develop moral character and personal discipline, and encourage critical and creative thinking among its members.<br> 
+                        <span class="text-yellow-500">Section 2.</span> The Fraternity shall promote social justice including the commitment to create economic opportunities for its members based on the freedom of initiative andself-reliance.<br>
+                        <span class="text-yellow-500">Section 3.</span> The Fraternity shall adopt an integrated and comprehensive approach geared towards the full development of its members in the fields of education, health,science, technology, arts, culture, and sports.<br> 
+                        <span class="text-yellow-500">Section 4.</span> The National Council shall adopt a national security plan to be administered by the National Secretary for the Interior and implemented by his local counterparts in their jurisdictions.<br>
+                        <span class="text-yellow-500">Section 5.</span> The Special Projects Committee shall be the social, economic, cultural and political development arm of the National Council. It shall be developed into a non-government organization (NGO) and shall henceforth be known as Fraternitas de Voluntas (Brotherhood of Freewill). It shall promote the viability and growth of Triskelion Cooperatives as units of social justice and economic development<br>
+                        <span class="text-yellow-500">Section 6.</span> The National Council shall provide the policy environment for full responsibility of Triskelion capability and the emergence of communication structures suitable to the needs and aspirations of the Fraternity and the balanced flow of information into, out of, and across the country.<br>
+                        <span class="text-yellow-500">Section 7.</span> The Fraternity shall take into account Regional and Provincial needs and conditions and shall encourage local planning in the development of policies and programs for the betterment of its members.<br>
+                </div>
+              
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group14" :open="$group === 'group14'" wire:key="group14">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group14')">
+                    Article XIII
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        Amendments or Revisions
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> Any amendments to, or revision of this Constitution may be proposed by: The National Assembly, upon a vote of three-fourths (3/4) of all its members or A Constitutional Convention.<br> 
+                        <span class="text-yellow-500">Section 2.</span> The National Assembly may by a vote of two-thirds (2/3) of all its members call a Constitutional Convention.<br>
+                        <span class="text-yellow-500">Section 3.</span> Any amendment to or revision of this Constitution under Section 1 hereof shall be valid when ratified by a majority of the votes of all delegates in a Constitutional Convention.<br> 
+                       
+                </div>
+              
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group15" :open="$group === 'group15'" wire:key="group15">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group15')">
+                    Article XIV
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        Transitory Provisions
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> The First National Congress shall be held on October 3, 2000 and shall beheld every two (2) years thereafter, every second week of November.<br> 
+                        <span class="text-yellow-500">Section 2.</span> All Interim Regional Structures shall continue to exercise its functions until October 2002 when regular Regional Conventions will be held under the auspices of the National Council.<br>
+                        <span class="text-yellow-500">Section 3.</span> All Interim Provincial Councils shall continue to exercise its powers and functions until September 2002 when regular Provincial Elections will be held.<br> 
+                        <span class="text-yellow-500">Section 4.</span> All school-based chapters, whether Seniors or Juniors, and all community-based chapters shall hold its annual elections every third week of June.<br> 
+                        <span class="text-yellow-500">Section 5.</span> The City Councils and Municipal Councils shall have their regular elections on the month of July, and shall be witnessed by the Provincial Executive Council.<br> 
+                        <span class="text-yellow-500">Section 6.</span> Provincial Councils shall have their regular elections on the month of August.<br> 
+                        <span class="text-yellow-500">Section 7.</span> Regional Councils shall have their regular elections on the month of September.<br> 
+                        <span class="text-yellow-500">Section 8.</span> The National Council shall hold their regular elections on the month of November and shall assume office immediately on the following year..<br> 
+                        <span class="text-yellow-500">Section 9.</span> National Assembly shall determine the honoraria and other remunerational located for the Premier and that the utilization of this fund shall be subject to the approval of the National Assembly.<br> 
+                       
+                </div>
+              
+            </x-slot:content>
+        </x-mary-collapse>
+
+        <x-mary-collapse name="group16" :open="$group === 'group16'" wire:key="group16">
+            <x-slot:heading>
+                <div class="cursor-pointer text-yellow-500 " wire:click="toggle('group16')">
+                    Article XV
+                </div>
+            </x-slot:heading>
+            <x-slot:content>
+                
+                <div class="p-4 text-black">
+                    <h3 Class="text-yellow-500 font-bold text-lg text-center mb-4">
+                        Effectivity
+                   </h3>
+
+                        <span class="text-yellow-500">Section 1.</span> All existing INEC resolutions, implementing guidelines, letters of instrumentation, and other issuance's consistent with this Constitution shall remain operative until amended, repealed, or revoked.<br> 
+                        <span class="text-yellow-500">Section 2.</span> This Constitution shall take effect immediately upon its ratification by a majority of the votes cast in a National Congress held for the purpose and shall supersede all previous Constitutions.<br>
+                        <p>
+                            Approved and adopted by the delegates of the First National Congress held fromOctober 2-3, 2000 at the La Vista Resort, Brgy. Pansol, Calamba Laguna.
+                        </p>
+                        
+                       
+                </div>
+              
             </x-slot:content>
         </x-mary-collapse>
     </x-mary-accordion>

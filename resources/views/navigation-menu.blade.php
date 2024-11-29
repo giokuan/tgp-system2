@@ -49,7 +49,7 @@
                 </div>
                 @endif
 
-                @if (Route::is('by-laws'))
+                @if (Route::is('profile-complete'))
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="#" :active="request()->routeIs('by-laws')">
                         {{ __('By-Laws') }}
@@ -63,7 +63,7 @@
                 </div>
                 @endif
 
-                @if (Route::is('constitutions'))
+                @if (Route::is('profile-complete'))
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="#" :active="request()->routeIs('constitutions')">
                         {{ __('Constitutions') }}
@@ -238,7 +238,7 @@
             </x-responsive-nav-link>
             @endif
 
-            @if (Route::is('by-laws'))
+            @if (Route::is('profile-complete'))
             <x-responsive-nav-link href="#" :active="request()->routeIs('by-laws')">
                 {{ __('By-Laws') }}
             </x-responsive-nav-link>
@@ -248,7 +248,7 @@
             </x-responsive-nav-link>
             @endif
 
-            @if (Route::is('constitutions'))
+            @if (Route::is('profile-complete'))
             <x-responsive-nav-link href="#" :active="request()->routeIs('constitutions')">
                 {{ __('Constitutions') }}
             </x-responsive-nav-link>
