@@ -21,14 +21,14 @@
 
                 @if (Route::is('profile-complete'))
     <!-- Navigation Links for profile-complete route -->
-                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex ">
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex ">
                         <x-nav-link wire:navigate href="#" :active="request()->routeIs('dashboard')" >
                             {{ __('Dashboard') }}
                         </x-nav-link>
                     </div>
                 @else
                     <!-- Navigation Links for other routes -->
-                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex ">
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex ">
                         <x-nav-link wire:navigate href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" >
                             {{ __('Dashboard') }}
                         </x-nav-link>
@@ -36,13 +36,13 @@
                 @endif
 
                 @if (Route::is('profile-complete'))
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="#" :active="request()->routeIs('member')">
                         {{ __('Member') }}
                     </x-nav-link>
                 </div>
                 @else
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="{{ route('member') }}" :active="request()->routeIs('member')">
                         {{ __('Member') }}
                     </x-nav-link>
@@ -50,27 +50,27 @@
                 @endif
 
                 @if (Route::is('profile-complete'))
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="#" :active="request()->routeIs('by-laws')">
-                        {{ __('By-Laws') }}
+                        {{ __('Bylaws') }}
                     </x-nav-link>
                 </div>
                 @else
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="{{ route('by-laws') }}" :active="request()->routeIs('by-laws')">
-                        {{ __('By-Laws') }}
+                        {{ __('Bylaws') }}
                     </x-nav-link>
                 </div>
                 @endif
 
                 @if (Route::is('profile-complete'))
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="#" :active="request()->routeIs('constitutions')">
                         {{ __('Constitutions') }}
                     </x-nav-link>
                 </div>
                 @else
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="{{ route('constitutions') }}" :active="request()->routeIs('constitutions')">
                         {{ __('Constitutions') }}
                     </x-nav-link>
@@ -78,13 +78,13 @@
                 @endif
 
                 @if (Route::is('profile-complete'))
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="#" :active="request()->routeIs('officers')">
                         {{ __('Officers') }}
                     </x-nav-link>
                 </div>
                 @else
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="{{ route('officers') }}" :active="request()->routeIs('officers')">
                         {{ __('Officers') }}
                     </x-nav-link>
@@ -254,11 +254,11 @@
 
             @if (Route::is('profile-complete'))
             <x-responsive-nav-link href="#" :active="request()->routeIs('by-laws')">
-                {{ __('By-Laws') }}
+                {{ __('Bylaws') }}
             </x-responsive-nav-link>
             @else
             <x-responsive-nav-link href="{{ route('by-laws') }}" :active="request()->routeIs('by-laws')">
-                {{ __('By-Laws') }}
+                {{ __('Bylaws') }}
             </x-responsive-nav-link>
             @endif
 
