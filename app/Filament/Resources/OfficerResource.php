@@ -44,8 +44,9 @@ class OfficerResource extends Resource
                 TextColumn::make('id'),
                 TextColumn::make('name')->sortable()->searchable(),
                 TextColumn::make('position'),
-                ImageColumn::make('photo'),
-                // TextColumn::make('created_at')->label('Published on')->date()->sortable()->searchable(),
+                ImageColumn::make('photo')
+                ->disk('public') // Specify the storage disk
+                ->getStateUsing(fn ($record) => $record->photo ? asset('storage/' . $record->photo) : null),
             ])
             ->filters([
                 //

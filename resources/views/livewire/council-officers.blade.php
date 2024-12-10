@@ -2,9 +2,11 @@
     <div
       class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
       <div class="flex items-center gap-4 w-full">
-        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-        class="w-24 h-24 object-center object-cover rounded-full"
-      />
+        @if($chairmanNamePhoto)
+        <img src="{{ asset('storage/' . $chairmanNamePhoto) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
+        @else
+            <p>No photo available</p>
+        @endif
         <div class="transition-all transform duration-500">
           <h1 class="text-black dark:text-gray-200 font-bold">
             {{ $chairmanName }}
@@ -21,9 +23,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
             <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-            />
+                @if($viceChairmanInternalPhoto)
+                <img src="{{ asset('storage/' . $viceChairmanInternalPhoto) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
+                @else
+                    <p>No photo available</p>
+                @endif
             <div class="w-fit transition-all transform duration-500">
                 <h1 class="text-black dark:text-gray-200 font-bold">
                     {{ $viceChairmanInternal }}
@@ -38,9 +42,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
         <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-        />
+            @if($viceChairmanExternalPhoto)
+            <img src="{{ asset('storage/' . $viceChairmanExternalPhoto) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
+            @else
+                <p>No photo available</p>
+            @endif
             <div class="w-fit transition-all transform duration-500">
             <h1 class="text-black dark:text-gray-200 font-bold">
                 {{ $viceChairmanExternal }}
@@ -60,9 +66,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
             <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-            />
+                @if($secretaryPhoto)
+                <img src="{{ asset('storage/' . $secretaryPhoto) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
+                @else
+                    <p>No photo available</p>
+                @endif
             <div class="w-fit transition-all transform duration-500">
                 <h1 class="text-black dark:text-gray-200 font-bold">
                     {{ $secretary }}
@@ -77,9 +85,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
         <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-        />
+            @if($treasurerPhoto)
+            <img src="{{ asset('storage/' . $treasurerPhoto) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
+            @else
+                <p>No photo available</p>
+            @endif
             <div class="w-fit transition-all transform duration-500">
             <h1 class="text-black dark:text-gray-200 font-bold">
                 {{ $treasurer }}
@@ -94,9 +104,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
         <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-        />
+            @if($auditorPhoto)
+            <img src="{{ asset('storage/' . $auditorPhoto) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
+            @else
+                <p>No photo available</p>
+            @endif
             <div class="w-fit transition-all transform duration-500">
             <h1 class="text-black dark:text-gray-200 font-bold">
                 {{ $auditor }}
@@ -115,9 +127,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
             <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-            />
+                @if($judicial1Photo)
+                <img src="{{ asset('storage/' . $judicial1Photo) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
+                @else
+                    <p>No photo available</p>
+                @endif
             <div class="w-fit transition-all transform duration-500">
                 <h1 class="text-black dark:text-gray-200 font-bold">
                     {{ $judicial1 }}
@@ -136,11 +150,11 @@
             {{-- <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
             class="w-24 h-24  object-center object-cover rounded-full "
         /> --}}
-        @if($judicial2Photo)
-        <img src="{{ asset('storage/' . $judicial2Photo) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
-    @else
-        <p>No photo available</p>
-    @endif
+            @if($judicial2Photo)
+                <img src="{{ asset('storage/' . $judicial2Photo) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
+            @else
+                <p>No photo available</p>
+            @endif
             <div class="w-fit transition-all transform duration-500">
             <h1 class="text-black dark:text-gray-200 font-bold">
                 {{ $judicial2  }}
@@ -156,9 +170,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
         <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-        />
+            @if($judicial3Photo)
+                <img src="{{ asset('storage/' . $judicial3Photo) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
+            @else
+                <p>No photo available</p>
+            @endif
             <div class="w-fit transition-all transform duration-500">
             <h1 class="text-black dark:text-gray-200 font-bold">
                 {{ $judicial3  }}
@@ -173,9 +189,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
         <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-        />
+            @if($judicial4Photo)
+            <img src="{{ asset('storage/' . $judicial4Photo) }}" alt="Judicial Photo" class="w-24 h-24 rounded-full mt-2">
+            @else
+                <p>No photo available</p>
+            @endif
             <div class="w-fit transition-all transform duration-500">
             <h1 class="text-black dark:text-gray-200 font-bold">
                 {{ $judicial4  }}
@@ -195,9 +213,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
             <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-            />
+                @if($adviser1Photo)
+                <img src="{{ asset('storage/' . $adviser1Photo) }}" alt="Adviser Photo" class="w-24 h-24 rounded-full mt-2">
+                @else
+                    <p>No photo available</p>
+                @endif
             <div class="w-fit transition-all transform duration-500">
                 <h1 class="text-black dark:text-gray-200 font-bold">
                     {{ $adviser1  }}
@@ -212,9 +232,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
         <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-        />
+            @if($adviser2Photo)
+            <img src="{{ asset('storage/' . $adviser2Photo) }}" alt="Adviser Photo" class="w-24 h-24 rounded-full mt-2">
+            @else
+                <p>No photo available</p>
+            @endif
             <div class="w-fit transition-all transform duration-500">
             <h1 class="text-black dark:text-gray-200 font-bold">
                 {{ $adviser2  }}
@@ -229,9 +251,11 @@
         <div
         class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
         <div class="flex items-center gap-4">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-            class="w-24 h-24  object-center object-cover rounded-full "
-        />
+            @if($adviser3Photo)
+            <img src="{{ asset('storage/' . $adviser3Photo) }}" alt="Adviser Photo" class="w-24 h-24 rounded-full mt-2">
+            @else
+                <p>No photo available</p>
+            @endif
             <div class="w-fit transition-all transform duration-500">
             <h1 class="text-black dark:text-gray-200 font-bold">
                 {{ $adviser3  }}
@@ -248,9 +272,11 @@
     <div
     class="backdrop-blur-md bg-white/30 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform">
     <div class="flex items-center gap-4">
-      <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxhdmF0YXJ8ZW58MHwwfHx8MTY5MTg0NzYxMHww&ixlib=rb-4.0.3&q=80&w=1080"
-      class="w-24 h-24 object-center object-cover rounded-full"
-    />
+        @if($projectOfficerPhoto)
+        <img src="{{ asset('storage/' . $projectOfficerPhoto) }}" alt="Adviser Photo" class="w-24 h-24 rounded-full mt-2">
+        @else
+            <p>No photo available</p>
+        @endif
       <div class="w-fit transition-all transform duration-500">
         <h1 class="text-black dark:text-gray-200 font-bold">
             {{ $projectOfficer  }}
