@@ -60,3 +60,7 @@ Route::get('/by-laws', function () {
 Route::get('/constitutions', function () {
     return view('constitutions');
 })->name('constitutions');
+
+Route::get('/officers', function () {
+    return view('officers');
+})->name('officers');
