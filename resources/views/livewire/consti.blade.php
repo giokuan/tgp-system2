@@ -39,10 +39,10 @@
                    <p>
                         <span class="text-yellow-500">Section 1.</span><br> The fraternity shall be known as the TAU GAMMA PHI - 
                         The TriskelionGrand Fraternity. The official seal of the TAU GAMMA PHI 
-                        shall be a large circle witha smaller circle inside. Between these two circles 
-                        are inscribed the words TAUGAMMA PHI on the upper portion; FORTIS-VOLUNTAS-FRATERNITAS 
-                        on thelower portion; the number 19 on the left side and 68 on the right. Within the 
-                        smallcircle is inscribed the three-legged symbol with the Greek letters TAU, GAMMA andPHI 
+                        shall be a large circle with a smaller circle inside. Between these two circles 
+                        are inscribed the words TAU GAMMA PHI on the upper portion; FORTIS-VOLUNTAS-FRATERNITAS 
+                        on the lower portion; the number 19 on the left side and 68 on the right. Within the 
+                        small circle is inscribed the three-legged symbol with the Greek letters TAU, GAMMA and PHI 
                         between each of the legs. The official colors of the seal are black and gold.
                    </p>
                 </div>
@@ -72,8 +72,8 @@
                         <span class="text-yellow-500">Section 5.</span> The Tau Gamma Phi encourages and fosters scholarship among its members. The stimulation of intellectual creativeness and the promotion of the social and physical well being of its members is of paramount concern.<br> 
                         <p class="my-2 text-lg font-bold">Policies</p>
                         <span class="text-yellow-500">Section 6.</span> The Tau Gamma Phi shall seek and help in the realization of a trulydemocratic society, adhere and promote the policy of peace, equality, unity andcooperation among all people.<br> 
-                        <span class="text-yellow-500">Section 7.</span> The Tau Gamma Phi shall take an active part in the conservation of the country's natural resources, renewing those that can be renewed and campaigningagainst the exploitation of this God-given wealth.<br> 
-                        <span class="text-yellow-500">Section 8.</span> The Tau Gamma Phi shall strive to mold its members into morally uprightand self-reliant individuals geared towards civic efficiency.<br> 
+                        <span class="text-yellow-500">Section 7.</span> The Tau Gamma Phi shall take an active part in the conservation of the country's natural resources, renewing those that can be renewed and campaigning against the exploitation of this God-given wealth.<br> 
+                        <span class="text-yellow-500">Section 8.</span> The Tau Gamma Phi shall strive to mold its members into morally upright and self-reliant individuals geared towards civic efficiency.<br> 
                    </p>
                    
                 </div>
@@ -99,16 +99,16 @@
                         <li><span class="font-bold">SENIOR TRISKELION</span> - College students enrolled and initiated by Senior Triskelions in any college, university, and institution recognized by the National Council and individual
                         Junior Triskelion or Community-Based Chapter who has undergone welcome rites for upgrading to Senior Triskelion category and ritual ritesto full-fledged membership.</li>
                         <li><span class="font-bold">JUNIOR TRISKELION</span> - High School students initiated by Senior and/or Junior Triskelions in any high school recognized by the National Council.</li>
-                        <li><span class="font-bold">COMMUNITY-BASED TRISKELION</span> - Any out-of-school youth or college student inschools or universities without chapters or affiliations with any City, Municipal or Regional Council initiated by full-fledged and/or Community-Based members,provided that such Community-Based Chapters are recognized by its Municipal,Provincial and Regional Council.</li>
-                        <li><span class="font-bold">ALUMNI</span> - senior Triskelions who have graduated from college and undergraduateTriskelion who possess the following: 1 At least a bonafide member of five (5) years; 2 Gainfully employed or pursuing business</li>
+                        <li><span class="font-bold">COMMUNITY-BASED TRISKELION</span> - Any out-of-school youth or college student inschools or universities without chapters or affiliations with any City, Municipal or Regional Council initiated by full-fledged and/or Community-Based members,provided that such Community-Based Chapters are recognized by its Municipal, Provincial and Regional Council.</li>
+                        <li><span class="font-bold">ALUMNI</span> - senior Triskelions who have graduated from college and undergraduate Triskelion who possess the following: 1 At least a bonafide member of five (5) years; 2 Gainfully employed or pursuing business</li>
                     </ul>
                     <span class="text-yellow-500">Section 2.</span> Membership to the Fraternity shall be in three (3) stages:<br>
                     <ul class="mb-2">
-                        <li><span class="font-bold">PROBATIONARY</span> - newly initiated Triskelions placed under on-probation status for six (6) months or more, wherein merits and demerits are given based on hisperformance and must attend all seminars, workshops, training and meetings to beconducted by the Chapter or in cooperation with the City, Municipal, Provincial,Regional or National Council.</li>
-                        <li><span class="font-bold">FULL-PLEDGED MEMBER</span> - New members who have undergone the probationaryperiod and has passed the Ritual Rites of the Fraternity.</li>
-                        <li><span class="font-bold">MOST DISTINGUISHED GUARDIAN (MDG)</span> - A full-pledged member who haseffectively served for one (1) year as Grand Triskelion, or local founders or thosewho have given exemplary service in the development of the Fraternity and hasgiven it honor, integrity and prestige. Membership to the Order is bestowed by fellowMost Distinguished Guardians or MDGs upon the recommendation of the chapter Grand Triskelion and approval of the Grand Council. The provisions of this sectionshall not apply to members who have served or are currently serving as MDGs atthe time of ratification of this Constitution.</li>
+                        <li><span class="font-bold">PROBATIONARY</span> - newly initiated Triskelions placed under on-probation status for six (6) months or more, wherein merits and demerits are given based on his performance and must attend all seminars, workshops, training and meetings to be conducted by the Chapter or in cooperation with the City, Municipal, Provincial,Regional or National Council.</li>
+                        <li><span class="font-bold">FULL-PLEDGED MEMBER</span> - New members who have undergone the probationary period and has passed the Ritual Rites of the Fraternity.</li>
+                        <li><span class="font-bold">MOST DISTINGUISHED GUARDIAN (MDG)</span> - A full-pledged member who has effectively served for one (1) year as Grand Triskelion, or local founders or those who have given exemplary service in the development of the Fraternity and has given it honor, integrity and prestige. Membership to the Order is bestowed by fellow Most Distinguished Guardians or MDGs upon the recommendation of the chapter Grand Triskelion and approval of the Grand Council. The provisions of this section shall not apply to members who have served or are currently serving as MDGs atthe time of ratification of this Constitution.</li>
                     </ul>
-                    <span class="text-yellow-500 mb-2">Section 3.</span>Membership to the Fraternity shall cease upon resignation or expulsion for due cause. Members recommended for expulsion shall have the benefit of a trial or due process and may appeal to the higher organ of the Fraternity. All local chaptersmust provide the higher echelons of the Fraternity with duly-certified expulsionpapers not more than ten (10) days after its effectivity.<br>
+                    <span class="text-yellow-500 mb-2">Section 3.</span>Membership to the Fraternity shall cease upon resignation or expulsion for due cause. Members recommended for expulsion shall have the benefit of a trial or due process and may appeal to the higher organ of the Fraternity. All local chaptersmust provide the higher echelons of the Fraternity with duly-certified expulsion papers not more than ten (10) days after its effectivity.<br>
                     <span class="text-yellow-500">Section 4.</span> Candidate members to the Tau Gamma Phi shall be qualified on the basis of the following: <br> 
                         <ul>
                             <li><span class="font-bold">He must believe in the Principles of the Fraternity.</span></li>
@@ -117,7 +117,7 @@
                             <li><span class="font-bold">must be mentally and physically fit, supported by a Medical Certificate under oath.</span></li>
                             <li><span class="font-bold">He must be willing to undergo the membership requirements.</span></li>
                             <li><span class="font-bold">He must be sponsored by any Triskelion of good standing.</span></li>
-                            <li><span class="font-bold"> He must not be a member of any fraternity or organization whose principles andpurposes are contrary to those of the Tau Gamma Phi.</span></li>
+                            <li><span class="font-bold"> He must not be a member of any fraternity or organization whose principles and purposes are contrary to those of the Tau Gamma Phi.</span></li>
                         </ul>
                     <span class="text-yellow-500">Section 5.</span> Candidate members shall be subjected to background investigation prior to interview and orientation. The Grand Council shall approve his application upon formal endorsement of the sponsor.<br> 
                     
@@ -166,13 +166,13 @@
                         Rights and Privileges of a Triskelion
                    </h3>
 
-                        <span class="text-yellow-500">Section 1.</span> The right to equal treatment and opportunities shall not be abridgedregardless of religious belief, socio-economic and political status.<br> 
-                        <span class="text-yellow-500">Section 2.</span> Every Triskelion shall have the right to express his opinions on mattersconcerning the Fraternity provided that it is put forth in a constructive manner.<br>
+                        <span class="text-yellow-500">Section 1.</span> The right to equal treatment and opportunities shall not be abridged regardless of religious belief, socio-economic and political status.<br> 
+                        <span class="text-yellow-500">Section 2.</span> Every Triskelion shall have the right to express his opinions on matters concerning the Fraternity provided that it is put forth in a constructive manner.<br>
                         <span class="text-yellow-500">Section 3.</span> The right to be protected against exploitation, improper influences, and other conditions prejudicial to his physical, intellectual, social, political, economic andmoral development shall be guaranteed.<br>
                         <span class="text-yellow-500">Section 4.</span> Every Triskelion has the right to have access and inspect all books of accounts, records and similar materials of public character pertaining to the fraternity<br> 
-                        <span class="text-yellow-500">Section 5.</span> The right of a Triskelion in good standing to actively participate in all projectsand undertakings of the Fraternity shall always be recognized.<br> 
+                        <span class="text-yellow-500">Section 5.</span> The right of a Triskelion in good standing to actively participate in all projects and undertakings of the Fraternity shall always be recognized.<br> 
                         <span class="text-yellow-500">Section 6.</span> Qualified full-pledged Triskelions in good standing shall have the right to runfor elective positions in the Fraternity subject to the qualifications of the position.<br> 
-                        <span class="text-yellow-500">Section 7.</span> The right to join or organize legitimate organizations whose purposes arecontributory to the enhancement of the Fraternity shall not be impaired.<br> 
+                        <span class="text-yellow-500">Section 7.</span> The right to join or organize legitimate organizations whose purposes are contributory to the enhancement of the Fraternity shall not be impaired.<br> 
                 </div>
               
             </x-slot:content>
@@ -193,7 +193,7 @@
 
                         <span class="text-yellow-500 ">Section 1.</span> The National Council:<br> 
                         <p>
-                            The National Council of the Tau Gamma Phi shall be the final authority in themanagement and administration of the affairs of the Fraternity.The National Council shall be composed of:
+                            The National Council of the Tau Gamma Phi shall be the final authority in the management and administration of the affairs of the Fraternity.The National Council shall be composed of:
                         </p>
                         <ul class="mb-2">
                             <li>1. The National Assembly</li>
@@ -203,32 +203,32 @@
                         <span class="text-yellow-500 my-2">Section 2.</span> The National Assembly<br>
                         <p>
                             The National Assembly shall be the highest policy-making body of the Fraternity. <br>
-                            The National Assembly shall be composed of all the incumbent duly electedRegional Secretary-Generals and Provincial Governor-Generals and shall functionas a collegial body.
+                            The National Assembly shall be composed of all the incumbent duly elected Regional Secretary-Generals and Provincial Governor-Generals and shall functionas a collegial body.
                         </p>
                         <p class="my-2 font-bold">
                             The National Assembly shall have the following powers and functions:
                         </p>
                         <ul>
                             <li>1. To elect the officers of the National Executive Council.</li>
-                            <li>2. To analyze, evaluate, deliberate on and render decisions regarding programs,policies and developmental plans of the National Executive Council.</li>
-                            <li>3. To enact a national budget to be supported by available funds as certified bythe National Treasurer or to be raised by corresponding revenue proposalssubmitted by the National Secretariat.</li>
+                            <li>2. To analyze, evaluate, deliberate on and render decisions regarding programs, policies and developmental plans of the National Executive Council.</li>
+                            <li>3. To enact a national budget to be supported by available funds as certified bythe National Treasurer or to be raised by corresponding revenue proposals submitted by the National Secretariat.</li>
                             <li>4. To act on all proposed amendments or revisions to this Constitution.</li>
                             <li>5. To establish the rules of its proceedings and to conduct inquiries in aid of legislation in accordance with its duly published rules and procedures.</li>
                             <li>6. A quorum, which is fifty percent plus one (50%+1) shall first be established, andthat two-thirds (2/3) of the members present who are duly notified, can override theveto power of the Premier.</li>
-                            <li>7. The National Assembly may punish its members for disorderly behavior and tosuspend them with the concurrence of two-thirds (2/3) of all its members</li>
+                            <li>7. The National Assembly may punish its members for disorderly behavior and to suspend them with the concurrence of two-thirds (2/3) of all its members</li>
                         </ul>
                         <p class="my-2 font-bold">
                             Meetings, Quorum and Manner of Voting of the National Assembly:
                         </p>
                         <ul>
-                            <li>1. The National Assembly shall holds its annual meeting on the last week of January of every fiscal year at the principal office or at any place within the area of operation of the Fraternity. Special National Assembly meetings may be called toconsider urgent matters requiring National Assembly decisions upon orders of thePremier or upon petition of at least forty percent (40%) of its members.</li>
+                            <li>1. The National Assembly shall holds its annual meeting on the last week of January of every fiscal year at the principal office or at any place within the area of operation of the Fraternity. Special National Assembly meetings may be called to consider urgent matters requiring National Assembly decisions upon orders of the Premier or upon petition of at least forty percent (40%) of its members.</li>
                             <li>2. At all annual or special meetings of the National Assembly, fifty percent plus one(50%+1) of the total number of members shall constitute a quorum.</li>
-                            <li>3. Recognized Regional Secretary Generals and Provincial Governor Generals or their duly authorized representatives, who are physically present in National Assembly meetings shall be qualified to vote, participate in all deliberations, and inall decision making.</li>
+                            <li>3. Recognized Regional Secretary Generals and Provincial Governor Generals or their duly authorized representatives, who are physically present in National Assembly meetings shall be qualified to vote, participate in all deliberations, and in all decision making.</li>
                         </ul>
 
                         <span class="text-yellow-500 my-2">Section 3.</span> The NATIONAL EXECUTIVE COUNCIL: <br>
                         <p class="my-2 font-bold">
-                            The National Executive Council is vested upon by this Constitution with the power toimplement and execute its contents and all policies, rules and regulations affectingthe existence of the Fraternity.
+                            The National Executive Council is vested upon by this Constitution with the power to implement and execute its contents and all policies, rules and regulations affecting the existence of the Fraternity.
                         </p>
                         <p class="my-2 font-bold">
                             The National Executive Council shall be composed of the following:
@@ -254,26 +254,26 @@
                             <li>2. To prepare an annual program for budget and to submit the same to the National Assembly for approval.</li>
                             <li>3. To bestow final approval of recognition to newly created chapters or councils andto suspend the recognition of chapters upon the recommendation of the Regional Councils.</li>
                             <li>4. To adopt policies for fund sourcing, capital build-up, loans, acquisitions of properties, collection of dues and fees for the benefit of the Fraternity.</li>
-                            <li>5. To issue circulars, memoranda, and policy instructions to ensure the strictcompliance with this Constitution and revisions in national policies and programsapproved by the National Assembly.</li>
-                            <li>6. In case of national emergency, where the National Assembly cannot beconvened, the National Executive Council may decide for and in behalf of the bestinterests of the Fraternity.</li>
-                            <li>7. To create other committees and offices deemed necessary for the efficient andeffective implementation of programs and policies of the National Council.</li>
+                            <li>5. To issue circulars, memoranda, and policy instructions to ensure the strict compliance with this Constitution and revisions in national policies and programs approved by the National Assembly.</li>
+                            <li>6. In case of national emergency, where the National Assembly cannot be convened, the National Executive Council may decide for and in behalf of the best interests of the Fraternity.</li>
+                            <li>7. To create other committees and offices deemed necessary for the efficient and effective implementation of programs and policies of the National Council.</li>
                         </ul>
                         <span class="text-yellow-500 my-2">Section 4.</span> OFFICERS of the NATIONAL EXECUTIVE COUNCIL: <br> 
                         <p class="my-2 font-bold">
                             THE PREMIER:
                         </p>
                         <ul>
-                            <li>1. The executive powers of the Fraternity shall be vested in the Premier of the TauGamma Phi. No member may be elected Premier unless he has served as SecretaryGeneral of any recognized Regional Council of the Fraternity or Governor General of any recognized Provincial Council.</li>
-                            <li>2. The Premier shall be elected by a majority vote of all the members of theNational Assembly and shall hold office for a term of two years (2) and shall beeligible for re-election. However the Premier shall serve for not more than two successive terms.</li>
+                            <li>1. The executive powers of the Fraternity shall be vested in the Premier of the TauGamma Phi. No member may be elected Premier unless he has served as Secretary General of any recognized Regional Council of the Fraternity or Governor General of any recognized Provincial Council.</li>
+                            <li>2. The Premier shall be elected by a majority vote of all the members of the National Assembly and shall hold office for a term of two years (2) and shall be eligible for re-election. However the Premier shall serve for not more than two successive terms.</li>
                             <li>3. Powers and Functions of the Premier:</li>
                             <ul>
-                                <li>- To exercise general supervision of all the local councils, executive offices andcommittees as may be provided by this Constitution.</li>
-                                <li>- To appoint and remove the National Executive Secretary; the heads of the differentexecutive offices and committees; the National Treasurer, and the National Auditor.</li>
+                                <li>- To exercise general supervision of all the local councils, executive offices and committees as may be provided by this Constitution.</li>
+                                <li>- To appoint and remove the National Executive Secretary; the heads of the different executive offices and committees; the National Treasurer, and the National Auditor.</li>
                                 <li>- To report on the state of the Fraternity in annual National Assembly meetings.</li>
                                 <li>- To recommend to the National Assembly measures necessary and expedient whichmust be acted upon before adjournment of a National Assembly meeting.</li>
                                 <li>- To preside over the meetings of the National Executive Council.</li>
-                                <li>- To exercise the power to veto bills amending this Constitution or revisions in nationalpolicies previously decided upon by the National Assembly.</li>
-                                <li>- To enter into contracts, agreements or pacts with other legitimate organizations andentities which shall be beneficial to the Fraternity provided that he gets theconcurrence of at least two-thirds (2/3) of total number of present members in theNational Assembly.</li>
+                                <li>- To exercise the power to veto bills amending this Constitution or revisions in national policies previously decided upon by the National Assembly.</li>
+                                <li>- To enter into contracts, agreements or pacts with other legitimate organizations andentities which shall be beneficial to the Fraternity provided that he gets the concurrence of at least two-thirds (2/3) of total number of present members in the National Assembly.</li>
                             </ul>
                         </ul>
                         <p class="my-2 font-bold">
@@ -287,15 +287,15 @@
                             The Vice-Premier for LUZON; the Vice- Premier for VISAYAS; the Vice- Premier for MINDANAO; and the Vice-Premier for INTERNATIONAL AFFAIRS:
                         </P>
                         <ul>
-                            <li>1. The Vice-Premier for Luzon; the Vice-Premier for Visayas; the Vice-Premier for Mindanao; and the Vice-Premier for International Affairs are duly- elected nationalofficials. No member shall be elected Vice-Premier unless he has served asSecretary General of any recognized Regional Council or Governor General of anyrecognized Provincial Council.</li>
+                            <li>1. The Vice-Premier for Luzon; the Vice-Premier for Visayas; the Vice-Premier for Mindanao; and the Vice-Premier for International Affairs are duly- elected national officials. No member shall be elected Vice-Premier unless he has served as Secretary General of any recognized Regional Council or Governor General of any recognized Provincial Council.</li>
                             <li>2. Powers and Functions of the Vice-Premier for Luzon; the Vice- Premier for Visayas; the Vice-Premier for Mindanao; and the Vice-Premier for International Affairs:</li>
                             <ul>
                                 <li>- To assist and support the Premier in the performance of the latter duties.</li>
                                 <li>- To supervise the operations of all the Regional Councils in their respective territorial jurisdictions.</li>
                                 <li>- To screen, recommend, expedite, facilitate and decide on issues and concerns brought forth by the various Regional and Provincial Councils within his territorial jurisdiction.</li>
                                 <li>- To formulate developmental plans in line with the general thrusts of the area and submit the same to the National Executive Council for deliberation and approval.</li>
-                                <li>- To consolidate and submit to the National Assembly and National Executive Councilquarterly accomplishment and status reports of the different Regional Councils under his jurisdiction.</li>
-                                <li>- To facilitate and coordinate the establishment of the City, Municipal, provincial, andRegional Councils within his jurisdiction and strengthen the same in line with nationalpolicies.</li>
+                                <li>- To consolidate and submit to the National Assembly and National Executive Council quarterly accomplishment and status reports of the different Regional Councils under his jurisdiction.</li>
+                                <li>- To facilitate and coordinate the establishment of the City, Municipal, provincial, and Regional Councils within his jurisdiction and strengthen the same in line with national policies.</li>
                             
                             </ul>
                         </ul>
@@ -304,13 +304,13 @@
                             The NATIONAL EXECUTIVE SECRETARY:
                         </p>
                         <ul>
-                            <li>1. The National Executive Secretary shall act as the head of the NationalSecretariat and shall supervise its over-all operations.</li>
-                            <li>2. The National Executive Secretary must be a member of the MostDistinguished Order of the Guardians and shall be appointed by the Premier</li>
+                            <li>1. The National Executive Secretary shall act as the head of the National Secretariat and shall supervise its over-all operations.</li>
+                            <li>2. The National Executive Secretary must be a member of the Most Distinguished Order of the Guardians and shall be appointed by the Premier</li>
                             <li>3. Duties and functions of the National Executive Secretary:</li>
                             <ul>
-                                <li>- To ensure that the various echelons of the fraternal organization are functioningefficiently on their prime concerns.</li>
-                                <li>- To assign the specific tasks of the various office and committee heads in conformitywith the policies and programs of the National Council.</li>
-                                <li>- To take responsibility for the record keeping of all meetings of the National Assemblyand the National Executive Council and to furnish copies to all the members of bothbranches.</li>
+                                <li>- To ensure that the various echelons of the fraternal organization are functioning efficiently on their prime concerns.</li>
+                                <li>- To assign the specific tasks of the various office and committee heads in conformity with the policies and programs of the National Council.</li>
+                                <li>- To take responsibility for the record keeping of all meetings of the National Assemblyand the National Executive Council and to furnish copies to all the members of both branches.</li>
                             </ul>
                         </ul>
 
@@ -326,11 +326,11 @@
                             <li>3. To identify, secure, develop and maintain financial sources for the Fraternity.</li>
                             <li>4. To exercise technical supervision of the budget and finance offices in the lower structures of the Fraternity.</li>
                             <li>5. To devise effective and efficient financial mechanisms and structures.</li>
-                            <li>6. To disburse funds of the National Council in accordance with the NationalBudget and in strict compliance with the established rules and regulations.</li>
+                            <li>6. To disburse funds of the National Council in accordance with the National Budget and in strict compliance with the established rules and regulations.</li>
                             <li>7. To post an adequate bond from a reputable insurance company acceptable tothe National Executive Council in such amount which might be fixed by the former.</li>
-                            <li>8. To keep charge of the funds, securities, titles, deeds, receipts, anddisbursements of the Fraternity.</li>
-                            <li>9. To deposit or cause to be deposited all moneys and other valuable effects inthe name and to the credit of the Fraternity in such banks or trust companies as theNational Executive Council may from time to time designate.</li>
-                            <li>10. To render to the National Executive Council or to the National Assemblywhenever required an account of the financial condition of the Fraternity and at theclose of calendar year to submit a like report for such calendar year.</li>
+                            <li>8. To keep charge of the funds, securities, titles, deeds, receipts, and disbursements of the Fraternity.</li>
+                            <li>9. To deposit or cause to be deposited all moneys and other valuable effects inthe name and to the credit of the Fraternity in such banks or trust companies as the National Executive Council may from time to time designate.</li>
+                            <li>10. To render to the National Executive Council or to the National Assembly whenever required an account of the financial condition of the Fraternity and at theclose of calendar year to submit a like report for such calendar year.</li>
                             <li>11. To keep correct Books of Account of all the business transactions of the Fraternity.</li>
                             <li>12. To advise the National Council regarding disposition of funds and other matters relative to financial matters.</li>
                         </ul>
@@ -339,7 +339,7 @@
                             The NATIONAL AUDITOR:
                         </p>
                         <P>
-                            The National Auditor shall be appointed by the Premier upon the recommendation of the National Executive Secretary and shall come from the ranks of the MostDistinguished Order of the Guardians and shall serve a four (4) year’s term.The National Auditor shall be a Certified Public Accountant and preferably a MostDistinguish Guardian (MDG).
+                            The National Auditor shall be appointed by the Premier upon the recommendation of the National Executive Secretary and shall come from the ranks of the Most Distinguished Order of the Guardians and shall serve a four (4) year's term. The National Auditor shall be a Certified Public Accountant and preferably a Most Distinguish Guardian (MDG).
                         </P>
                      
                         <P>
@@ -374,7 +374,7 @@
                             <li>1. To disseminate notices of meeting, consultations, dialogues seminars and circular orders, memoranda, policy instructions and other information materials of the National Council to the lower structures of the Fraternity.</li>
                             <li>2. To supervise the over-all operations and ensure the continuous circulation of the official publication of the National Council.</li>
                             <li>3. To submit quarterly and annual reports on communication capabilities and information dissemination potentials</li>
-                            <li>4. To coordinate with the Secretary for Membership and Organization in themaintenance and upgrading of a secured national database.</li>
+                            <li>4. To coordinate with the Secretary for Membership and Organization in the maintenance and upgrading of a secured national database.</li>
                             <li>5. To establish and maintain a National Council Website</li>
                             <li>6. To continuously upgrade and streamline existing communication capabilities.</li>
                             <li>7. To establish and maintain a speaker's and trainer's bureau to complement the activities of the various national offices and committees.</li>
@@ -406,7 +406,7 @@
                         </p>
                         <ul>
                             <li>1. To formulate and implement a comprehensive security plan to ensure the confidentiality of Fraternity information and security for all its members.</li>
-                            <li>2. To devise a national disaster preparedness program and form highly-trainedquick reaction units from among the members all over the archipelago to augment other civic action groups in areas hard-hit by calamities and disasters.</li>
+                            <li>2. To devise a national disaster preparedness program and form highly-trained quick reaction units from among the members all over the archipelago to augment other civic action groups in areas hard-hit by calamities and disasters.</li>
                             <li>3. To coordinate with government agencies and non-government organizations on projects and programs aimed at community development, agro-industrial thrusts,labor intensive income generating ventures and peace and order.</li>
                             <li>4. To act as the National Wielder of the Whip.</li>
                         </ul>
@@ -497,14 +497,14 @@
 
                         <span class="text-yellow-500">Section 1.</span> The territorial subdivisions of the Republic of the Philippines except the barangay shall be adopted by the Fraternity. As such, there shall be Regional, Provincial, City, and Municipal Council formations.<br> 
                         <span class="text-yellow-500">Section 2.</span> The territorial subdivisions of the Fraternity shall enjoy local autonomy.<br>
-                        <span class="text-yellow-500">Section 3.</span> The National Assembly shall enact a Local Council Code which shall providefor a more responsive and accountable local council structure instituted through asystem of decentralization with effective mechanisms of recall, initiative, andconsultations, allocate among the different council units their powers, responsibilities, and resources, and provide for the qualifications, election,appointment, and removal, term, powers, and functions, and duties of local officersand other matters relating to the Fraternity and operation of the local council units.<br> 
+                        <span class="text-yellow-500">Section 3.</span> The National Assembly shall enact a Local Council Code which shall providefor a more responsive and accountable local council structure instituted through asystem of decentralization with effective mechanisms of recall, initiative, and consultations, allocate among the different council units their powers, responsibilities, and resources, and provide for the qualifications, election, appointment, and removal, term, powers, and functions, and duties of local officers and other matters relating to the Fraternity and operation of the local council units.<br> 
                         <span class="text-yellow-500">Section 4.</span> The National Premier shall exercise general supervision over local council units. Regional Councils with respect to component Provincial Councils, ProvincialCouncils with respect to component City and Municipal Councils, and City and Municipal Councils with respect to component local chapters shall ensure that theacts of their component units are within the scope of their prescribed powers and functions.<br>
                         <span class="text-yellow-500">Section 5.</span> Each local council unit shall have the power to create its own sources of revenues and levy dues, fees and other charges subject to such guidelines and limitations as the National Assembly may provide, consistent with the basic policy of local autonomy. Such dues, fees, and charges shall accrue exclusively to the local council units.<br>
                         <span class="text-yellow-500">Section 6.</span> The term of office of the elected local chapter officers, whether school-basedor community-based, and City and Municipal Councils shall be:<br>
                         <p>
-                            School or Community Based Chapters - One (1) year; Municipal, City, Provincial and Regional Councils - Two (2) years.Provincial Council and Regional Council officers shall serve for two years and nosuch elected officer shall serve for more than two successive terms. Voluntary renunciation of office for any length of time shall not be considered as an interruptionin the continuity of his service for the full term for which he was elected.
+                            School or Community Based Chapters - One (1) year; Municipal, City, Provincial and Regional Councils - Two (2) years. Provincial Council and Regional Council officers shall serve for two years and nosuch elected officer shall serve for more than two successive terms. Voluntary renunciation of office for any length of time shall not be considered as an interruptionin the continuity of his service for the full term for which he was elected.
                         </p>
-                        <span class="text-yellow-500">Section 7.</span> No Regional, Provincial, City, Municipal or local chapter unit may be created, divided, merged, abolished, or its boundary substantially altered, except in accordance with the criteria established in the Local Council Code and subject toapproval by the National Executive Council.<br>
+                        <span class="text-yellow-500">Section 7.</span> No Regional, Provincial, City, Municipal or local chapter unit may be created, divided, merged, abolished, or its boundary substantially altered, except in accordance with the criteria established in the Local Council Code and subject to approval by the National Executive Council.<br>
                 </div>
               
             </x-slot:content>
@@ -523,7 +523,7 @@
                         Principle of Subsidiarity
                    </h3>
 
-                        <span class="text-yellow-500">Section 1.</span> In conformity with the principle of subsidiarity, functions that may well beperformed by a lower-level structure of the Fraternity shall not be vested in a higher-level structure of the Fraternity. Thus, functions that can be performed efficiently by aschool or community chapter shall not be vested in the City or Municipal Council.Those that can be rendered well by the City or Municipal Council shall not be vestedin the Provincial Council. Those that can be performed by the Provincial Council shall not be vested in the Regional Council. Finally, functions that can be performed well by the Regional Council shall not be given to the National Council. Conflicts anddoubts on jurisdiction between the National Council, Regional Council, and lower level structures of the Fraternity shall be decided expeditiously by the National Judicial Council en banc or in division depending on the seriousness of the controversy.<br> 
+                        <span class="text-yellow-500">Section 1.</span> In conformity with the principle of subsidiarity, functions that may well be performed by a lower-level structure of the Fraternity shall not be vested in a higher-level structure of the Fraternity. Thus, functions that can be performed efficiently by aschool or community chapter shall not be vested in the City or Municipal Council.Those that can be rendered well by the City or Municipal Council shall not be vested in the Provincial Council. Those that can be performed by the Provincial Council shall not be vested in the Regional Council. Finally, functions that can be performed well by the Regional Council shall not be given to the National Council. Conflicts and doubts on jurisdiction between the National Council, Regional Council, and lower level structures of the Fraternity shall be decided expeditiously by the National Judicial Council en banc or in division depending on the seriousness of the controversy.<br> 
                         <span class="text-yellow-500">Section 2.</span> The sub-division and pattern of the organizational structure of the Regional Council, Provincial Council, City or Municipal Council, and the School-based and Community-based chapters are designed to be similar. However, all Chapters and Councils shall follow the Direct Line of Command. School-based and Community-based Chapters to Municipal or City Councils, to the Provincial Council to the Regional Council up to the National Council.<br>
                         <span class="text-yellow-500">Section 3.</span> No chapter or council shall be allowed to undertake programs or projects contrary to this Constitution or to national policies.<br> 
                         <span class="text-yellow-500">Section 4.</span> Officials of the Fraternity in various echelons shall be elected as follows:<br>
