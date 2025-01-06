@@ -7,6 +7,8 @@
     {{-- <x-welcome></x-welcome> --}}
     <livewire:report-status />
 
+    <livewire:slider-logo />
+
 
     
     <footer class="flex items-center justify-center py-16 text-center text-sm text-yellow-500">
