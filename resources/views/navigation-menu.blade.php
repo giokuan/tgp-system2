@@ -38,13 +38,13 @@
                 @if (Route::is('profile-complete'))
                 <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="#" :active="request()->routeIs('member')">
-                        {{ __('Member') }}
+                        {{ __('Members') }}
                     </x-nav-link>
                 </div>
                 @else
                 <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
                     <x-nav-link wire:navigate href="{{ route('member') }}" :active="request()->routeIs('member')">
-                        {{ __('Member') }}
+                        {{ __('Members') }}
                     </x-nav-link>
                 </div>
                 @endif
@@ -244,11 +244,11 @@
             
             @if (Route::is('profile-complete'))
             <x-responsive-nav-link href="#" :active="request()->routeIs('member')">
-                {{ __('Member') }}
+                {{ __('Members') }}
             </x-responsive-nav-link>
             @else
             <x-responsive-nav-link href="{{ route('member') }}" :active="request()->routeIs('member')">
-                {{ __('Member') }}
+                {{ __('Members') }}
             </x-responsive-nav-link>
             @endif
 
