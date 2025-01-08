@@ -1,4 +1,4 @@
-<div class="mt-16   mx-10 xl:mx-32">
+<div class=" mx-10 xl:mx-32">
     <div class="pt-24 w-full">
     <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
       <div class="relative flex flex-col bg-clip-border rounded-xl backdrop-blur-md bg-white/30 text-black shadow-md">

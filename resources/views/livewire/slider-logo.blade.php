@@ -1,4 +1,4 @@
-<div>
+{{-- <div class="mt-16"> --}}
 <meta name="description" content="Inspiring smiles and fostering joy within the neurodiversity community.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Smile For Neuro-Diversity, SfN, Smile for,  smile-for-neuro-diversity, smile-for, smile">
@@ -12,7 +12,7 @@
   rel="stylesheet"
 />
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-</header>
+{{-- </header> --}}
 <style>
   .swiper-pagination {
     bottom: 0;
@@ -29,13 +29,12 @@
     background-color:rgb(14 211 207);
   }
 </style>
-<body>
 
-{{-- <div> --}}
+
+
  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center  z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center z-10 overflow-hidden">
     
-
       <div>
           <div class="mx-auto max-w-xl flex rounded-2xl backdrop-blur-md bg-white/30">
             <div class="swiper-container flex-col flex  self-center">
@@ -45,17 +44,17 @@
                     <div class="relative">
                       <div class="relative">
                         <img
-                          src="/storage/avatars/njkIbPhyZCftc4g9XbMWwVsa7aGVPajYLRXhEeoo.jpg"
-                          alt="aji"
-                          class="object-cover w-full h-60 mx-auto rounded-t-2xl"
+                        src="{{ asset('storage/chairmans/gio.webp')}}"
+                        alt="aji"
+                        class="w-full mx-auto h-full rounded-full p-4"
                         />
                         <div class="rounded-t-2xl absolute bg-gradient-to-t from-black opacity-75 inset-0 z-0"></div>
                       </div>
                     </div>
 
-                    <div class="text-sm mt-5 mx-5">
-                      <p class="font-medium text-white">Ajimon</p>
-                      <p class="mt-1 text-gray-300">CEO Of Marketing </p>
+                    <div class="text-sm mt-2 ml-2">
+                      <p class="font-medium text-white">Giovanni Kuan</p>
+                      <p class="mt-1 text-gray-300">Chairman</p>
                     </div>
                   
                   </blockquote>
@@ -66,17 +65,17 @@
                     <div class="">
                       <div class="relative">
                         <img
-                          src="https://scontent.fccj2-2.fna.fbcdn.net/v/t39.30808-6/293672501_5357602044279252_6369958249008578770_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=bdzc8jxe0kYAX83O5hJ&_nc_ht=scontent.fccj2-2.fna&oh=00_AT8kbjMW_DqEcrXGcCTesn5pdVLgQReb2NlaF3OduMzl1Q&oe=632F3EE9"
-                          alt="aji"
-                          class="object-cover w-full mx-auto rounded-t-2xl h-60"
+                        src="{{ asset('storage/chairmans/boyong.webp')}}"
+                        alt="aji"
+                        class="w-full mx-auto h-full rounded-full p-4"
                         />
-                        <div class="rounded-t-2xl absolute bg-gradient-to-t from-gray-800 opacity-75 inset-0 z-0"></div>
+                        <div class="rounded-t-2xl absolute bg-gradient-to-t from-black opacity-75 inset-0 z-0"></div>
                       </div>
                     </div>
 
-                    <div class="text-sm mt-5 mx-5">
-                        <p class="font-medium text-white">John Doe</p>
-                        <p class="mt-1 text-gray-300">Marketing Manager  </p>
+                    <div class="text-sm mt-2 ml-2">
+                        <p class="font-medium text-white">Jei Rioveros</p>
+                        <p class="mt-1 text-gray-300">Chairman</p>
                     </div>
                     
                   </blockquote>
@@ -87,17 +86,59 @@
                     <div class="">
                       <div class="relative">
                         <img
-                          src="{{ asset('storage/chapterlogo/tipaz.webp')}}"
-                          alt="aji"
-                          class="w-full mx-auto h-full rounded-2xl"
+                        src="{{ asset('storage/chairmans/jake.webp')}}"
+                        alt="aji"
+                        class="w-full mx-auto h-full rounded-full p-4"
                         />
-                        <div class="p-2 rounded-t-2xl absolute bg-black opacity-45 inset-0 z-0"></div>
+                        <div class="p-2 rounded-t-2xl absolute bg-gradient-to-t from-black opacity-75 inset-0 z-0"></div>
                       </div>
                     </div>
 
-                    <div class="text-sm mt-5 mx-5">
-                        <p class="font-medium text-white">Ajimon</p>
-                        <p class="mt-1 text-gray-300">CEO Of Marketing </p>
+                    <div class="text-sm mt-2 ml-2 my-2">
+                        <p class="font-medium text-white">Reymond Jake Gonzales</p>
+                        <p class="mt-1 text-gray-300">Chairman</p>
+                    </div>
+   
+                  </blockquote>
+                </div>
+
+                <div class="swiper-slide">
+                  <blockquote class="text-left">
+                    <div class="">
+                      <div class="relative">
+                        <img
+                        src="{{ asset('storage/chairmans/tiktik.webp')}}"
+                        alt="aji"
+                        class="w-full mx-auto h-full rounded-full p-4"
+                        />
+                        <div class="p-2 rounded-t-2xl absolute bg-gradient-to-t from-black opacity-75 inset-0 z-0"></div>
+                      </div>
+                    </div>
+
+                    <div class="text-sm mt-2 ml-2 my-2">
+                        <p class="font-medium text-white">Eduardo Franco</p>
+                        <p class="mt-1 text-gray-300">Chairman</p>
+                    </div>
+   
+                  </blockquote>
+                </div>
+
+                <div class="swiper-slide">
+                  <blockquote class="text-left">
+                    <div class="">
+                      <div class="relative">
+                        <img
+                        src="{{ asset('storage/chairmans/nopah.webp')}}"
+                        alt="aji"
+                        class="w-full mx-auto h-full rounded-full p-4"
+                        />
+                        <div class="p-2 rounded-t-2xl absolute bg-gradient-to-t from-black opacity-75 inset-0 z-0"></div>
+                      </div>
+                    </div>
+
+                    <div class="text-sm mt-2 ml-2 my-2">
+                        <p class="font-medium text-white">Allan Balagtas</p>
+                        <p class="mt-1 text-gray-300">Chairman</p>
                     </div>
    
                   </blockquote>
@@ -478,6 +519,27 @@
                   <div class="">
                     <div class="relative">
                       <img
+                      src="{{ asset('storage/chapterlogo/sapangan.webp')}}"
+                      alt="aji"
+                      class="w-full mx-auto h-full rounded-2xl"
+                      />
+                    <div class="rounded-t-2xl absolute bg-gradient-to-t from-black opacity-75 inset-0 z-0"></div>
+                    </div>
+                  </div>
+
+                  <div class="text-sm mt-2 ml-2">
+                    <p class="font-medium text-white">Founding Date: 2021</p>
+                    <p class="mt-1 text-gray-300">Sapangan Chapter</p>
+                  </div>
+         
+                </blockquote>
+              </div>
+
+              <div class="swiper-slide">
+                <blockquote class="text-left">
+                  <div class="">
+                    <div class="relative">
+                      <img
                       src="{{ asset('storage/chapterlogo/sico.webp')}}"
                       alt="aji"
                       class="w-full mx-auto h-full rounded-2xl"
@@ -559,13 +621,12 @@
             </div>
 
               <div class="mt-12 swiper-pagination hidden"></div>
-            </div>
-            </div>
           </div>
         </div>
-
       </div>
-  </div>
+       
+</div>
+
 
 <script
   crossorigin="anonymous"
@@ -575,7 +636,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     new Swiper('.swiper-container', {
-      loop: true,
+      loop: false,
       slidesPerView: 1,
       spaceBetween: 8,
       autoplay: {
@@ -600,5 +661,5 @@
     })
   })
 </script>
-</body>
-</html>
+
+

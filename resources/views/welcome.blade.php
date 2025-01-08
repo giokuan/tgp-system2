@@ -125,8 +125,8 @@
                         </div>
                     </main>
 
-                    <footer class="flex items-center justify-center py-16 text-center text-sm text-yellow-500">
-                        {{-- © 2024 SJMC, All rights reserved. --}}
+                    <footer class="flex items-center justify-center py-8 text-center text-sm text-yellow-500 overflow-hidden">
+                      
                         Powered by: <img class="size-16" src="{{ asset('storage/logo/diaspora.webp')}}" alt="Diaspora logo">
                     </footer>
                 </div>
