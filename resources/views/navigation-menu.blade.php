@@ -1,4 +1,5 @@
-<nav x-data="{ open: false }" class="backdrop-blur-md bg-white/30 border-b border-gray-100 fixed w-full z-20 top-0 left-0 mb-20">
+<div class="mb-16 overflow-hidden">
+<nav x-data="{ open: false }" class="backdrop-blur-md bg-white/30 border-b border-gray-100 fixed w-full z-20 top-0 left-0 ">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -377,3 +378,4 @@
         </div>
     </div>
 </nav>
+</div>
