@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Livewire\ViewProfile;
 use App\Models\Member;
+use Illuminate\Support\Facades\View;
 
 Route::get('/', function () {
     return view('welcome');

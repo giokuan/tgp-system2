@@ -1,4 +1,4 @@
-{{-- <div class="mt-16"> --}}
+<div>{{-- <div class="mt-16"> --}}
 <meta name="description" content="Inspiring smiles and fostering joy within the neurodiversity community.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Smile For Neuro-Diversity, SfN, Smile for,  smile-for-neuro-diversity, smile-for, smile">
@@ -65,7 +65,7 @@
                     <div class="">
                       <div class="relative">
                         <img
-                        src="{{ asset('storage/chairmans/boyong.webp')}}"
+                        src="{{ asset('storage/chairmans/person.webp')}}"
                         alt="aji"
                         class="w-full mx-auto h-full rounded-full p-4"
                         />
@@ -86,7 +86,7 @@
                     <div class="">
                       <div class="relative">
                         <img
-                        src="{{ asset('storage/chairmans/jake.webp')}}"
+                        src="{{ asset('storage/chairmans/person.webp')}}"
                         alt="aji"
                         class="w-full mx-auto h-full rounded-full p-4"
                         />
@@ -107,7 +107,7 @@
                     <div class="">
                       <div class="relative">
                         <img
-                        src="{{ asset('storage/chairmans/tiktik.webp')}}"
+                        src="{{ asset('storage/chairmans/person.webp')}}"
                         alt="aji"
                         class="w-full mx-auto h-full rounded-full p-4"
                         />
@@ -128,7 +128,7 @@
                     <div class="">
                       <div class="relative">
                         <img
-                        src="{{ asset('storage/chairmans/nopah.webp')}}"
+                        src="{{ asset('storage/chairmans/person.webp')}}"
                         alt="aji"
                         class="w-full mx-auto h-full rounded-full p-4"
                         />
@@ -628,13 +628,14 @@
 </div>
 
 
+
 <script
   crossorigin="anonymous"
   defer
   src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"
 ></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('livewire:navigated', function () {
     new Swiper('.swiper-container', {
       loop: false,
       slidesPerView: 1,
@@ -651,11 +652,11 @@
           slidesPerView: 1,
         },
         1024: {
-          slidesPerView: 1.5,
+          slidesPerView: 2,
         },
 
         1440: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
       },
     })
@@ -663,3 +664,4 @@
 </script>
 
 
+</div>
