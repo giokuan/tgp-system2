@@ -57,9 +57,9 @@ class MemberResource extends Resource
             ->filters([
                 //
             ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
-            ])
+            // ->actions([
+            //     Tables\Actions\EditAction::make(),
+            // ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),

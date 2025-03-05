@@ -5,12 +5,19 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
+                @if (Route::is('profile-complete'))
+                <div class="shrink-0 flex items-center">
+                    <p >
+                        <x-application-mark class="block h-9 w-auto" />
+                    </p>
+                </div>
+                @else
                 <div class="shrink-0 flex items-center">
                     <a wire:navigate href="{{ route('dashboard') }}">
                         <x-application-mark class="block h-9 w-auto" />
                     </a>
                 </div>
-
+                @endif
                 
 
                 <!-- Navigation Links -->
@@ -22,8 +29,8 @@
 
                 @if (Route::is('profile-complete'))
     <!-- Navigation Links for profile-complete route -->
-                    <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex ">
-                        <x-nav-link wire:navigate href="#" :active="request()->routeIs('dashboard')" >
+                    <div class="hidden text-gray-500 space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex ">
+                        <x-nav-link  :active="request()->routeIs('dashboard')" >
                             {{ __('Dashboard') }}
                         </x-nav-link>
                     </div>
@@ -37,8 +44,8 @@
                 @endif
 
                 @if (Route::is('profile-complete'))
-                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
-                    <x-nav-link wire:navigate href="#" :active="request()->routeIs('member')">
+                <div class="hidden text-gray-500 space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
+                    <x-nav-link  :active="request()->routeIs('member')">
                         {{ __('Members') }}
                     </x-nav-link>
                 </div>
@@ -51,8 +58,8 @@
                 @endif
 
                 @if (Route::is('profile-complete'))
-                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
-                    <x-nav-link wire:navigate href="#" :active="request()->routeIs('by-laws')">
+                <div class="hidden text-gray-500 space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
+                    <x-nav-link  :active="request()->routeIs('by-laws')">
                         {{ __('Bylaws') }}
                     </x-nav-link>
                 </div>
@@ -65,8 +72,8 @@
                 @endif
 
                 @if (Route::is('profile-complete'))
-                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
-                    <x-nav-link wire:navigate href="#" :active="request()->routeIs('constitutions')">
+                <div class="hidden text-gray-500 space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
+                    <x-nav-link  :active="request()->routeIs('constitutions')">
                         {{ __('Constitutions') }}
                     </x-nav-link>
                 </div>
@@ -79,8 +86,8 @@
                 @endif
 
                 @if (Route::is('profile-complete'))
-                <div class="hidden space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
-                    <x-nav-link wire:navigate href="#" :active="request()->routeIs('officers')">
+                <div class="hidden text-gray-500 space-x-8 sm:-my-px sm:ms-6 lg:ms-8 xl:ms-10 sm:flex">
+                    <x-nav-link   :active="request()->routeIs('officers')">
                         {{ __('Officers') }}
                     </x-nav-link>
                 </div>
@@ -186,7 +193,7 @@
                             </div>
 
                             @if (Route::is('profile-complete'))
-                            <x-dropdown-link wire:navigate href="#">
+                            <x-dropdown-link  >
                                 {{ __('Settings') }}
                             </x-dropdown-link>
                             @else
