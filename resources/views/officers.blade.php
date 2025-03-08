@@ -4,7 +4,6 @@
         <livewire:council-officers />
     </div>
 
-    {{-- chairmen anf logo --}}
 
     <livewire:slider-logo />
     
