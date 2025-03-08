@@ -6,7 +6,7 @@
 
 
 
-        {{-- Footer --}}
+ 
     <div class="sm:mt-16 md:mt-36 fixed  bottom-0 w-full">
         <footer class="flex items-center mx-auto justify-center pt-8 mb-4 text-center text-sm text-yellow-500 overflow-hidden">
         
