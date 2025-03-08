@@ -5,7 +5,7 @@
     </div>
 
 
-  
+    <livewire:slider-logo />
     
 
 </x-app-layout>

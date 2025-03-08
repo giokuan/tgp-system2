@@ -11,7 +11,7 @@
           <h1 class="text-black dark:text-gray-200 font-bold">
             {{ $chairmanName }}
           </h1>
-          <p class="text-black">{{ $position }}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+          <p class="text-black">{{ $position }}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
          
         </div>
       </div>
@@ -281,7 +281,7 @@
         <h1 class="text-black dark:text-gray-200 font-bold">
             {{ $projectOfficer  }}
         </h1>
-        <p class="text-black">Project Officer&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+        <p class="text-black">Project Officer&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
       
       </div>
     </div>

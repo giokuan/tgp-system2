@@ -33,7 +33,7 @@
 
 
  
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center z-10 overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mx-4  mb-8 z-10 overflow-hidden">
     
       <div>
           <div class="mx-auto max-w-xl flex rounded-2xl backdrop-blur-md bg-white/30">
@@ -54,7 +54,7 @@
 
                     <div class="text-sm mt-2 ml-2">
                       <p class="font-medium text-white">Giovanni Kuan</p>
-                      <p class="mt-1 text-gray-300">Chairman</p>
+                      <p class="mt-1 text-gray-300">Former Chairman</p>
                     </div>
                   
                   </blockquote>
@@ -75,7 +75,7 @@
 
                     <div class="text-sm mt-2 ml-2">
                         <p class="font-medium text-white">Jei Rioveros</p>
-                        <p class="mt-1 text-gray-300">Chairman</p>
+                        <p class="mt-1 text-gray-300"> Former Chairman</p>
                     </div>
                     
                   </blockquote>
@@ -96,7 +96,7 @@
 
                     <div class="text-sm mt-2 ml-2 my-2">
                         <p class="font-medium text-white">Reymond Jake Gonzales</p>
-                        <p class="mt-1 text-gray-300">Chairman</p>
+                        <p class="mt-1 text-gray-300">Former Chairman</p>
                     </div>
    
                   </blockquote>
@@ -117,7 +117,7 @@
 
                     <div class="text-sm mt-2 ml-2 my-2">
                         <p class="font-medium text-white">Eduardo Franco</p>
-                        <p class="mt-1 text-gray-300">Chairman</p>
+                        <p class="mt-1 text-gray-300">Former Chairman</p>
                     </div>
    
                   </blockquote>
@@ -138,7 +138,7 @@
 
                     <div class="text-sm mt-2 ml-2 my-2">
                         <p class="font-medium text-white">Allan Balagtas</p>
-                        <p class="mt-1 text-gray-300">Chairman</p>
+                        <p class="mt-1 text-gray-300">Former Chairman</p>
                     </div>
    
                   </blockquote>
@@ -640,9 +640,10 @@
       loop: false,
       slidesPerView: 1,
       spaceBetween: 8,
-      autoplay: {
-        delay: 8000,
-      },
+      // autoplay: {
+      //   delay: 8000,
+      // },
+      autoplay: false,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
