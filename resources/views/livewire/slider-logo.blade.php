@@ -65,7 +65,7 @@
                     <div class="">
                       <div class="relative">
                         <img
-                        src="{{ asset('storage/chairmans/person.webp')}}"
+                        src="{{ asset('storage/chairmans/jei_rioveros.webp')}}"
                         alt="aji"
                         class="w-full mx-auto h-full rounded-full p-4"
                         />

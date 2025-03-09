@@ -24,18 +24,7 @@ class Officer extends Model
             if ($model->isDirty('photo') && ($model->getOriginal('photo') !== null)) {
                 Storage::disk('public')->delete($model->getOriginal('photo'));
             }
-            
-            // if ($model->isDirty('photos')) {
-            //     $originalPhotos = $model->getOriginal('photos') ?? [];
-            //     $newPhotos = $model->photos ?? [];
-    
-            //     // Find photos that were removed
-            //     $removedPhotos = array_diff($originalPhotos, $newPhotos);
-    
-            //     foreach ($removedPhotos as $photo) {
-            //         Storage::disk('public')->delete($photo);
-            //     }
-            // }
+        
         });
     
         static::deleting(function ($model) {
@@ -43,12 +32,7 @@ class Officer extends Model
                 Storage::disk('public')->delete($model->photo);
             }
             
-            // if ($model->photos !== null) {
-            //     // Assuming photos is an array of photo paths
-            //     foreach ($model->photos as $photo) {
-            //         Storage::disk('public')->delete($photo);
-            //     }
-            // }
+        
         });
     }
 }
