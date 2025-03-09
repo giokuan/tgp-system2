@@ -5,6 +5,7 @@
     </div>
 
 
+{{--chapter logo --}}
     <livewire:slider-logo />
     
 
