@@ -65,3 +65,14 @@ Route::get('/constitutions', function () {
 Route::get('/officers', function () {
     return view('officers');
 })->name('officers');
+
+
+Route::get('/officer-photo/{filename}', function ($filename) {
+    $path = storage_path('app/private/' . $filename); // Adjust path if needed
+
+    if (!file_exists($path)) {
+        abort(404);
+    }
+
+    return response()->file($path);
+})->middleware('auth'); // Add authentication middleware if needed
