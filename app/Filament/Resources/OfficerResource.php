@@ -28,7 +28,7 @@ class OfficerResource extends Resource
         return $form
             ->schema([
                 TextInput::make('name')->required(),
-                // TextInput::make('position')->required(),
+                TextInput::make('position')->required(),
                 
                 FileUpload::make('photo')->disk('public')->directory('officers')->required(),
                 // FileUpload::make('photos')->disk('public')->directory('officers'),
