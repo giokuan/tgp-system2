@@ -65,7 +65,7 @@
                     <div class="">
                       <div class="relative">
                         <img
-                        src="{{ asset('storage/chairmans/jei_rioveros.webp')}}"
+                        src="{{ asset('storage/chairmans/person.webp')}}"
                         alt="aji"
                         class="w-full mx-auto h-full rounded-full p-4"
                         />
@@ -639,10 +639,10 @@
     new Swiper('.swiper-container', {
       loop: false,
       slidesPerView: 1,
-      spaceBetween: 8,
-      // autoplay: {
-      //   delay: 8000,
-      // },
+      spaceBetween:
+      autoplay: {
+        delay: 8000,
+      },
       autoplay: false,
       pagination: {
         el: '.swiper-pagination',

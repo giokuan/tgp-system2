@@ -6,7 +6,7 @@
 
 
 {{--chapter logo --}}
-    <livewire:slider-logo />
+    {{-- <livewire:slider-logo /> --}}
     
 
 </x-app-layout>
