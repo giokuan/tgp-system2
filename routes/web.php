@@ -41,10 +41,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/profile-complete', functi
 })->name('profile-complete');
 
 
-// Route::get('/profile-complete', function () {
-//     return view('profile-complete');
-// })->name('profile-complete');
-
 
 Route::get('/member-view/{id}', function ($id) {
     return view('member-view', compact('id'));
