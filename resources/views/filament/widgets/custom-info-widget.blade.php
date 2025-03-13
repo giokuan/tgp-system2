@@ -11,6 +11,6 @@
                 prohibited and may lead to consequences aligned with our community values. Thank you for your commitment to upholding the 
                 trust and respect within our brotherhood.
             </div>
-        </div>{{-- Widget content --}}
+        </div>
     </x-filament::section>
 </x-filament-widgets::widget>
