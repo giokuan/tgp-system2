@@ -1,4 +1,4 @@
-<x-filament-widgets::widget class="fi-filament-info-widget">
+<x-filament-widgets::widget>
     <x-filament::section>
         <div class="flex items-center gap-x-3">
             <div  class="flex-1 ">
@@ -11,6 +11,6 @@
                 prohibited and may lead to consequences aligned with our community values. Thank you for your commitment to upholding the 
                 trust and respect within our brotherhood.
             </div>
-        </div>
+        </div>{{-- Widget content --}}
     </x-filament::section>
 </x-filament-widgets::widget>
