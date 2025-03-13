@@ -30,11 +30,7 @@ Route::get('edit-profile/{member_id}', function ($member_id) {
 })->name('edit-profile');
 
 
-// Route::get('edit-profile/{member_id}', function ($member_id) {
-//     dd($member_id, Member::find($member_id));  // This will output the member_id and the result of Member::find
-//     $member = Member::findOrFail($member_id);
-//     return view('edit-profile', compact('member'));
-// })->name('edit-profile');
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/profile-complete', function () {
     return view('profile-complete');
