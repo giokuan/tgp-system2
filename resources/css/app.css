@@ -1,6 +1,16 @@
+@import "swiper/css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-prev,
+.swiper-button-next {
+    --swiper-navigation-color: rgb(245, 158, 11);
+}
+
+.swiper-pagination {
+    --swiper-pagination-color: rgb(245, 158, 11);
+}
 
 [x-cloak] {
     display: none;
