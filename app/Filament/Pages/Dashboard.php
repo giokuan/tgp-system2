@@ -2,19 +2,19 @@
 
 namespace App\Filament\Pages;
 
+namespace App\Filament\Pages;
+
 use Filament\Pages\Dashboard as BaseDashboard;
+use App\Filament\Widgets\MemberStatsOverview;
 
 class Dashboard extends BaseDashboard
 {
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
-
-    protected static string $view = 'filament.pages.dashboard';
-    
+    protected function getHeaderWidgets(): array
+    {
+        return [
+            // MemberStatsOverview::class, // Use getHeaderWidgets() instead of getWidgets()
+            
+            ];
+    }
 }
 
-// class Dashboard extends Page
-// {
-//     protected static ?string $navigationIcon = 'heroicon-o-document-text';
-
-//     protected static string $view = 'filament.pages.dashboard';
-// }
