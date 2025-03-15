@@ -54,16 +54,22 @@ class MemberTable extends LivewireTable
 
             Column::make(__('Lastname'), 'last_name' )
                 ->sortable()
-                ->searchable(),
+                ->searchable(fn ($query, $term) => 
+                $query->whereRaw('UPPER(last_name) LIKE ?', ['%' . strtoupper($term) . '%'])
+         ),
                 
 
             Column::make(__('Firstname'), 'first_name')
                 ->sortable()
-                ->searchable(),
+                ->searchable(fn ($query, $term) => 
+                $query->whereRaw('UPPER(first_name) LIKE ?', ['%' . strtoupper($term) . '%'])
+            ),
 
             Column::make(__('AKA'), 'aka')
                 ->sortable()
-                ->searchable(),
+                ->searchable(fn ($query, $term) => 
+                $query->whereRaw('UPPER(aka) LIKE ?', ['%' . strtoupper($term) . '%'])
+            ),
 
             // Column::make(__('Chapter'), 'current_chapter')
             //     ->sortable(),
@@ -72,11 +78,15 @@ class MemberTable extends LivewireTable
                 Member::query()->get()->pluck('current_chapter', 'current_chapter')->toArray()
             )
             ->sortable()
-            ->searchable(),
+            ->searchable(fn ($query, $term) => 
+            $query->whereRaw('UPPER(current_chapter) LIKE ?', ['%' . strtoupper($term) . '%'])
+            ),
 
             Column::make(__('Root Chapter'), 'root_chapter')
                 ->sortable()
-                ->searchable(),
+                ->searchable(fn ($query, $term) => 
+        $query->whereRaw('UPPER(root_chapter) LIKE ?', ['%' . strtoupper($term) . '%'])
+        ),
 
             // Column::make(__('Actions'), function (Model $model): string {
             //     return '<a class="underline" href="#'.$model->getKey().'">VIEW</a>';
@@ -86,7 +96,9 @@ class MemberTable extends LivewireTable
 
             Column::make(__('Status'), 'status')
             ->sortable()
-            ->searchable(),
+            ->searchable(fn ($query, $term) => 
+            $query->whereRaw('UPPER(status) LIKE ?', ['%' . strtoupper($term) . '%'])
+        ),
 
         
             
