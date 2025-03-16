@@ -183,9 +183,9 @@ public function updateProfile()
                 $member->$key = $value;  // Update field value
                 $isUpdated = true;  // Mark as updated
             }
-        } else {
-            // If the field is empty, mark it as needing attention
-            $emptyFields = true;
+        // } else {
+        //     // If the field is empty, mark it as needing attention
+        //     $emptyFields = true;
         }
     }
 
@@ -199,6 +199,9 @@ public function updateProfile()
         $photoPath = $this->photo->store('uploads', 'public');
         $member->photo = $photoPath;
         $isUpdated = true;  // Mark as updated because photo has been changed
+        $this->reset('photo');
+
+        Storage::disk('local')->deleteDirectory('livewire-tmp');
     }
 
     // Check if any changes have been made
